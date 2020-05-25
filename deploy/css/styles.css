@@ -387,8 +387,8 @@ header {
     grid-template-areas: "burger logo" "nav nav"; }
     @media (min-width: 992px) {
       header > div {
-        grid-template-areas: "logo nav";
-        grid-template-columns: 40% auto; } }
+        grid-template-areas: "nav logo";
+        grid-template-columns: auto 23%; } }
     header > div #burger {
       align-items: center;
       display: flex;
@@ -416,10 +416,20 @@ header {
       @media (min-width: 992px) {
         header > div #nav {
           background-color: #fff;
-          display: block !important; } }
+          display: flex !important; } }
 /* =============
     Footer
 ============= */
 /* =============
     Section 1
 ============= */
+#s1 {
+  margin-top: 90px;
+  background-image: url("../img/section-1/hero.jpg");
+  height: 90vh;
+  background-position: center;
+  background-size: cover; }
+  #s1 #s1-text {
+    display: flex;
+    justify-content: center;
+    color: #fff; }

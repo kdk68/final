@@ -1,9 +1,16 @@
 /* =============
     Section 1
 ============= */
-#section-1{
-    .grid-content{
-        
-    }
+#s1{
+    margin-top: 90px;
+    background-image: url("../img/section-1/hero.jpg");
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
 
+    #s1-text{
+        display: flex;
+        justify-content: center;
+        color: $white;
+    }
 }

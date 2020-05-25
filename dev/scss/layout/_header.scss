@@ -16,8 +16,8 @@ header{
         "nav nav";
 
         @include lg{
-            grid-template-areas: "logo nav";
-            grid-template-columns: 40% auto;
+            grid-template-areas: "nav logo";
+            grid-template-columns: auto 23%;
         }
 
         #burger{
@@ -56,7 +56,7 @@ header{
 
             @include lg{
                 background-color: #fff;
-                display: block !important;
+                display: flex !important;
             }
         }
     }

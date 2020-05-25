@@ -41,6 +41,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/section-1/hero.jpg": {
+		"ft": 16384,
+		"iS": 2639470,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -211,7 +222,7 @@
 		"oAP": "/design/assets/Unoptimized/Philadelphia-Auto-Show-overhead-recrop-R-Kennedy-2200VP.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/design/assets/Unoptimized/Philadelphia_Auto_Show_Logo.jpg": {
