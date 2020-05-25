@@ -317,6 +317,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0; }
@@ -363,7 +368,7 @@ textarea {
       color: #0085AA;
       text-decoration: none;
       transition: 0.25s; }
-    #nav ul li 1:hover, #nav ul li a:active {
+    #nav ul li a:hover, #nav ul li a:active {
       color: #A8CC39; }
 
 /* =============
@@ -374,7 +379,8 @@ header {
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 2px solid #A8CC39; }
   header > div {
     display: grid;
     grid-template-columns: 70% auto;
@@ -396,11 +402,12 @@ header {
     header > div #logo {
       grid-area: logo;
       padding: 0;
-      justify-content: end; }
+      justify-content: end;
+      align-items: center; }
       header > div #logo img {
         height: 60px;
         margin: 0;
-        padding: 0; }
+        padding: 18px 0 0; }
     header > div #nav {
       background-color: #fff;
       display: none;

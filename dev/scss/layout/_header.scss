@@ -7,6 +7,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: 2px solid $green;
 
     >div{
         display: grid;
@@ -38,11 +39,12 @@ header{
             grid-area: logo;
             padding: 0;
             justify-content: end;
+            align-items: center;
 
             img{
                 height: 60px;
                 margin: 0;
-                padding: 0;
+                padding: 18px 0 0;
             }
         }
 
