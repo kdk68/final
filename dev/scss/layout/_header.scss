@@ -10,8 +10,8 @@ header{
 
     >div{
         display: grid;
-        grid-template-columns: 80% auto;
-        grid-template-areas: "logo burger"
+        grid-template-columns: 70% auto;
+        grid-template-areas: "burger logo"
         "nav nav";
 
         @include lg{
@@ -23,7 +23,6 @@ header{
             align-items: center;
             display: flex;
             grid-area: burger;
-            justify-content: flex-end;
             padding: 20px;
 
             @include lg{
@@ -38,6 +37,7 @@ header{
         #logo{
             grid-area: logo;
             padding: 0;
+            justify-content: end;
 
             img{
                 height: 60px;
