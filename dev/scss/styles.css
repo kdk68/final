@@ -345,9 +345,71 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav ul li {
+        align-items: center;
+        display: flex;
+        margin: 0 30px 0 0; } }
+    #nav ul li a:link, #nav ul li a:visited {
+      color: #0085AA;
+      text-decoration: none;
+      transition: 0.25s; }
+    #nav ul li 1:hover, #nav ul li a:active {
+      color: #A8CC39; }
+
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-areas: "logo burger" "nav nav"; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "logo nav";
+        grid-template-columns: 40% auto; } }
+    header > div #burger {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger {
+          display: none !important; } }
+      header > div #burger img {
+        cursor: pointer; }
+    header > div #logo {
+      grid-area: logo;
+      padding: 0; }
+      header > div #logo img {
+        height: 60px;
+        margin: 0;
+        padding: 0; }
+    header > div #nav {
+      background-color: #fff;
+      display: none;
+      grid-area: nav;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav {
+          background-color: #fff;
+          display: block !important; } }
 /* =============
     Footer
 ============= */
