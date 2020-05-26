@@ -446,6 +446,8 @@ header {
   display: flex;
   text-align: center;
   padding: 10px; }
+  #footer img {
+    height: 50px; }
   #footer ul {
     display: flex;
     justify-content: center; }
