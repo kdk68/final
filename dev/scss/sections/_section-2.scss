@@ -24,6 +24,14 @@
         h4{
             padding: 10px 10px;
             text-align: center;
+            font-size: rem-calc(18);
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+
+            @include md{
+                text-align: start;
+            }
         }
 
         >div{
@@ -31,88 +39,175 @@
             width: 20px;
             margin-left: 70px;
             background-color: $orange;
+
+            @include md{
+                margin-left: 374px;
+            }
         }
     }
 
-    #dnt{
-        border: 3px solid $orange;
-        margin: 0 5px;
-        padding: 25px 0 25px 13px;
+    #s2-content{
+        @include md{
+            display: grid;
+            gap: 0px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: "dnt dnt dnt map map map"
+            "img img article article article article";
+        }
+        
+       #dnt{
+            border: 3px solid $orange;
+            margin: 0 5px;
+            padding: 25px 0 25px 13px;
 
-        h2{
-            font-size: rem-calc(18);
-            padding-bottom: 2px;
+            h2{
+                font-size: rem-calc(18);
+                padding-bottom: 2px;
+                font-family: futura-pt-bold, sans-serif;
+                font-weight: 700;
+                font-style: normal;
+
+                @include md{
+                    font-size: rem-calc(20);
+                }
+            }
+
+            h3{
+                font-size: rem-calc(18);
+                padding-bottom: 10px;
+                padding-left: 15px;
+                font-family: futura-pt, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+
+                @include md{
+                    font-size: rem-calc(20);
+                }
+            }
+
+            @include md{
+                margin: 0;
+                grid-area: dnt;
+                border: none;
+                border-bottom: 10px solid $orange;
+                border-right: 10px solid $orange;
+            }
         }
 
-        h3{
-            font-size: rem-calc(18);
-            padding-bottom: 10px;
-            padding-left: 15px;
-        }
-    }
-
-    #s2-2{
-        height: 20px;
-        width: 20px;
-        margin-left: 150px;
-        background-color: $orange;
-    }
-
-    #s2-map{
-        border: 3px solid $orange;
-        margin: 0 5px;
-        height: 30vh;
-        background-image: url("../img/section-2/map.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #s2-3{
-        height: 20px;
-        width: 20px;
-        margin-left: 70px;
-        background-color: $orange;
-    }
-
-    article{
-        border: 3px solid $orange;
-        margin: 0 5px;
-        padding: 7px 0 0 4px;
-
-        h2{
-            font-size: rem-calc(18);
-            padding-top: 5px;
+        #s2-2{
+            height: 20px;
+            width: 20px;
+            margin-left: 150px;
+            background-color: $orange;
         }
 
-        h3{
-            font-size: rem-calc(17);
+        #s2-map{
+            border: 3px solid $orange;
+            margin: 0 5px;
+            height: 30vh;
+            background-image: url("../img/section-2/map.png");
+            background-position: center;
+            background-size: cover;
+
+            @include md{
+                margin: 0;
+                grid-area: map;
+                height: 40vh;
+                border: none;
+                border-bottom: 10px solid $orange;
+                border-left: 10px solid $orange;
+            }
         }
 
-        ul{
-            font-size: rem-calc(18);
+        #s2-3{
+            height: 20px;
+            width: 20px;
+            margin-left: 70px;
+            background-color: $orange;
         }
-    }
 
-    #s2-4{
-        height: 20px;
-        width: 20px;
-        margin-left: 230px;
-        background-color: $orange;
-    }
+        article{
+            border: 3px solid $orange;
+            margin: 0 5px;
+            padding: 7px 0 0 4px;
 
-    #s2-img{
-        border: 3px solid $orange;
-        margin: 0 5px;
-        height: 30vh;
-        background-image: url("../img/section-2/convention.jpg");
-        background-position: center;
-        background-size: cover;
-    }
+            h2{
+                font-size: rem-calc(18);
+                padding-top: 5px;
+                font-family: futura=pt-bold, sans-serif;
+                font-weight: 700;
+                font-style: normal;
 
+                @include md{
+                    font-size: rem-calc(20);
+                    padding-right: 10px;
+
+                }
+            }
+
+            h3{
+                font-size: rem-calc(17);
+                font-family: futura-pt, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+
+                @include md{
+                    font-size: rem-calc(20);
+
+                }
+            }
+
+            ul{
+                font-size: rem-calc(18);
+                font-family: futura-pt, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+
+                @include md{
+                    font-size: rem-calc(20);
+                }
+            }
+
+            @include md{
+                margin: 0;
+                grid-area: article;
+                border: none;
+                border-top: 10px solid $orange;
+                border-left: 10px solid $orange;
+            }
+        }
+
+        #s2-4{
+            height: 20px;
+            width: 20px;
+            margin-left: 230px;
+            background-color: $orange;
+        }
+
+        #s2-img{
+            border: 3px solid $orange;
+            margin: 0 5px;
+            height: 30vh;
+            background-image: url("../img/section-2/convention.jpg");
+            background-position: center;
+            background-size: cover;
+
+            @include md{
+                margin: 0;
+                grid-area: img;
+                border: none;
+                border-top: 10px solid $orange;
+                border-right: 10px solid $orange;
+            }
+        }
+
+        
+    }
     #s2-5{
         height: 20px;
         width: 20px;
-        margin-left: 70px;
+        margin-left: 246px;
         background-color: $orange;
-    }
+    } 
+    
 }
