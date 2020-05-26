@@ -7,6 +7,36 @@
         text-align: center;
         padding-bottom: 15px;
         font-size: rem-calc(20);
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(30);
+        }
+    }
+
+    h3{
+        font-size: rem-calc(18);
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(20);
+        }
+    }
+
+    p{
+        font-size: rem-calc(18);
+        font-family: fuura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 10px 0 5px;
+
+        @include md{
+            font-size: rem-calc(20);
+        }
     }
 
     #div-img-1{
@@ -76,19 +106,35 @@
             margin: 0 5px;
             padding: 25px 0 25px 13px;
 
-            h3{
-                font-size: rem-calc(18);
-            }
+            
             
             ul{
                 li{
                     padding: 5px 0;
                 }
 
+                h4{
+                    font-size: rem-calc(18);
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                    }
+                }
+
                 h5{
                     padding-left: 15px;
                     padding-right: 5px;
                     font-size: rem-calc(14);
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(16);
+                    }
                 }
             }
 
@@ -118,7 +164,7 @@
 
             @include md{
                 margin: 0;
-                height: 43vh;
+                height: 48vh;
                 grid-area: img;
                 border: none;
                 border-bottom: 10px solid $green;

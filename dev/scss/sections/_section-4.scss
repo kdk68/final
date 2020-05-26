@@ -16,7 +16,7 @@
     #div-img-2{
         background-image: url("../img/section-4/div.jpg");
         width: 100%;
-        height: 5vh;
+        height: 12vh;
         background-position: center;
         background-size: cover;
     }
@@ -38,7 +38,7 @@
             font-size: rem-calc(24);
 
             @include md{
-                margin: 50px 180px 0 10px;
+                margin: 0px 180px 0 10px;
                 font-size: rem-calc(45);
             }
 
