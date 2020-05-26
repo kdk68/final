@@ -4,8 +4,13 @@
 #s5{
     h2{
         text-align: center;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
         font-size: rem-calc(20);
+    }
+
+    p{
+        font-size: rem-calc(18);
+        padding: 5px 0;
     }
 
     #div-img-3{
@@ -47,5 +52,44 @@
             margin-left: 70px;
             background-color: $orange;
         }
+    }
+
+    #faq{
+        border: 3px solid $orange;
+        margin: 0 5px;
+        padding: 25px 0 25px 13px;
+    }
+
+    #s5-2{
+        background-color: $orange;
+        height: 35px;
+        width: 20px;
+        margin-left: 230px;
+    }
+
+    #press{
+        border: 3px solid $orange;
+        margin: 0 5px;
+        padding: 25px 13px;
+    }
+
+    #s5-3{
+        background-color: $orange;
+        height: 35px;
+        width: 20px;
+        margin-left: 150px;
+    }
+
+    #contacts{
+        border: 3px solid $orange;
+        margin: 0 5px;
+        padding: 25px 13px;
+    }
+
+    #s5-5{
+        background-color: $orange;
+        height: 35px;
+        width: 20px;
+        margin-left: 70px;
     }
 }

@@ -441,6 +441,23 @@ header {
 /* =============
     Footer
 ============= */
+#footer {
+  border-top: 3px solid #DF4C2C;
+  display: flex;
+  text-align: center;
+  padding: 10px; }
+  #footer ul {
+    display: flex;
+    justify-content: center; }
+    #footer ul li {
+      margin: 0 5px; }
+      #footer ul li a:link, #footer ul li a:visited {
+        color: #454545;
+        font-size: 2.1875rem;
+        transition: 0.25s; }
+      #footer ul li a:hover, #footer ul li a:active {
+        color: #A8CC39; }
+
 /* =============
     Section 1
 ============= */
@@ -810,8 +827,12 @@ header {
 ============= */
 #s5 h2 {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   font-size: 1.25rem; }
+
+#s5 p {
+  font-size: 1.125rem;
+  padding: 5px 0; }
 
 #s5 #div-img-3 {
   background-image: url("../img/section-5/div.jpg");
@@ -842,3 +863,36 @@ header {
   width: 20px;
   margin-left: 70px;
   background-color: #DF4C2C; }
+
+#s5 #faq {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  padding: 25px 0 25px 13px; }
+
+#s5 #s5-2 {
+  background-color: #DF4C2C;
+  height: 35px;
+  width: 20px;
+  margin-left: 230px; }
+
+#s5 #press {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  padding: 25px 13px; }
+
+#s5 #s5-3 {
+  background-color: #DF4C2C;
+  height: 35px;
+  width: 20px;
+  margin-left: 150px; }
+
+#s5 #contacts {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  padding: 25px 13px; }
+
+#s5 #s5-5 {
+  background-color: #DF4C2C;
+  height: 35px;
+  width: 20px;
+  margin-left: 70px; }
