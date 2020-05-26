@@ -52,6 +52,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-2/convention.jpg": {
+		"ft": 16384,
+		"iS": 240041,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/convention.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-2/map.png": {
+		"ft": 32768,
+		"iS": 818160,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -473,6 +495,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_section-1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-2.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

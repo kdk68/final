@@ -2,15 +2,34 @@
     Section 1
 ============= */
 #s1{
-    margin-top: 90px;
+    margin-top: 72px;
     background-image: url("../img/section-1/hero.jpg");
-    height: 90vh;
+    height: 20vh;
     background-position: center;
     background-size: cover;
+
+    @include md{
+        margin-top: 100px;
+        height: 50vh;
+    }
+
+    @include lg{
+        height: 60vh;
+    }
 
     #s1-text{
         display: flex;
         justify-content: center;
+        text-align: center;
         color: $white;
+        font-size: rem-calc(24);
+
+        @include md{
+            font-size: rem-calc(30);
+        }
+
+        @include lg{
+            font-size: rem-calc(35);
+        }
     }
 }

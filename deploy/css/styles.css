@@ -352,7 +352,7 @@ textarea {
 ============= */
 #nav ul {
   height: 100%;
-  text-align: right; }
+  text-align: left; }
   @media (min-width: 992px) {
     #nav ul {
       display: flex;
@@ -367,7 +367,8 @@ textarea {
     #nav ul li a:link, #nav ul li a:visited {
       color: #0085AA;
       text-decoration: none;
-      transition: 0.25s; }
+      transition: 0.25s;
+      font-size: 1rem; }
     #nav ul li a:hover, #nav ul li a:active {
       color: #A8CC39; }
 
@@ -383,12 +384,15 @@ header {
   border-bottom: 2px solid #A8CC39; }
   header > div {
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 38% auto;
     grid-template-areas: "burger logo" "nav nav"; }
+    @media (min-width: 768px) {
+      header > div {
+        grid-template-columns: 58% auto; } }
     @media (min-width: 992px) {
       header > div {
         grid-template-areas: "nav logo";
-        grid-template-columns: auto 23%; } }
+        grid-template-columns: auto 31%; } }
     header > div #burger {
       align-items: center;
       display: flex;
@@ -398,16 +402,23 @@ header {
         header > div #burger {
           display: none !important; } }
       header > div #burger img {
+        height: 30px;
         cursor: pointer; }
+        @media (min-width: 768px) {
+          header > div #burger img {
+            height: 40px; } }
     header > div #logo {
       grid-area: logo;
       padding: 0;
-      justify-content: end;
+      justify-content: right;
       align-items: center; }
       header > div #logo img {
-        height: 60px;
+        height: 50px;
         margin: 0;
-        padding: 18px 0 0; }
+        padding: 10px 0 0; }
+        @media (min-width: 768px) {
+          header > div #logo img {
+            height: 85px; } }
     header > div #nav {
       background-color: #fff;
       display: none;
@@ -424,12 +435,114 @@ header {
     Section 1
 ============= */
 #s1 {
-  margin-top: 90px;
+  margin-top: 72px;
   background-image: url("../img/section-1/hero.jpg");
-  height: 90vh;
+  height: 20vh;
   background-position: center;
   background-size: cover; }
+  @media (min-width: 768px) {
+    #s1 {
+      margin-top: 100px;
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #s1 {
+      height: 60vh; } }
   #s1 #s1-text {
     display: flex;
     justify-content: center;
-    color: #fff; }
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem; }
+    @media (min-width: 768px) {
+      #s1 #s1-text {
+        font-size: 1.875rem; } }
+    @media (min-width: 992px) {
+      #s1 #s1-text {
+        font-size: 2.1875rem; } }
+/* =============
+    Section 2
+============= */
+#s2 #s2-header h1 {
+  color: #fff;
+  background-color: #DF4C2C;
+  margin: 10px 11px 0;
+  padding: 40px 12px 0;
+  border-radius: 8px;
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    #s2 #s2-header h1 {
+      margin: 50px 180px 0 10px;
+      font-size: 2.8125rem; } }
+#s2 #s2-header h4 {
+  padding: 10px 10px;
+  text-align: center; }
+
+#s2 #s2-header > div {
+  height: 10px;
+  width: 20px;
+  margin-left: 70px;
+  background-color: #DF4C2C; }
+
+#s2 #dnt {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  padding: 25px 0 25px 13px; }
+  #s2 #dnt h2 {
+    font-size: 1.125rem;
+    padding-bottom: 2px; }
+  #s2 #dnt h3 {
+    font-size: 1.125rem;
+    padding-bottom: 10px;
+    padding-left: 15px; }
+
+#s2 #s2-2 {
+  height: 20px;
+  width: 20px;
+  margin-left: 150px;
+  background-color: #DF4C2C; }
+
+#s2 #s2-map {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  height: 30vh;
+  background-image: url("../img/section-2/map.png");
+  background-position: center;
+  background-size: cover; }
+
+#s2 #s2-3 {
+  height: 20px;
+  width: 20px;
+  margin-left: 70px;
+  background-color: #DF4C2C; }
+
+#s2 article {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  padding: 7px 0 0 4px; }
+  #s2 article h2 {
+    font-size: 1.125rem;
+    padding-top: 5px; }
+  #s2 article h3 {
+    font-size: 1.0625rem; }
+  #s2 article ul {
+    font-size: 1.125rem; }
+
+#s2 #s2-4 {
+  height: 20px;
+  width: 20px;
+  margin-left: 230px;
+  background-color: #DF4C2C; }
+
+#s2 #s2-img {
+  border: 3px solid #DF4C2C;
+  margin: 0 5px;
+  height: 30vh;
+  background-image: url("../img/section-2/convention.jpg");
+  background-position: center;
+  background-size: cover; }
+
+#s2 #s2-5 {
+  height: 20px;
+  width: 20px;
+  margin-left: 70px;
+  background-color: #DF4C2C; }

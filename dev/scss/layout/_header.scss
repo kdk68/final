@@ -11,13 +11,17 @@ header{
 
     >div{
         display: grid;
-        grid-template-columns: 70% auto;
+        grid-template-columns: 38% auto;
         grid-template-areas: "burger logo"
         "nav nav";
 
+        @include md{
+            grid-template-columns: 58% auto;
+        }
+
         @include lg{
             grid-template-areas: "nav logo";
-            grid-template-columns: auto 23%;
+            grid-template-columns: auto 31%;
         }
 
         #burger{
@@ -31,20 +35,29 @@ header{
             }
 
             img{
+                height: 30px;
                 cursor: pointer;
+
+                @include md{
+                    height: 40px;
+                }
             }
         }
 
         #logo{
             grid-area: logo;
             padding: 0;
-            justify-content: end;
+            justify-content: right;
             align-items: center;
 
             img{
-                height: 60px;
+                height: 50px;
                 margin: 0;
-                padding: 18px 0 0;
+                padding: 10px 0 0;
+
+                @include md{
+                    height: 85px;
+                }
             }
         }
 
