@@ -118,11 +118,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/section-4/jeep.png": {
+		"ft": 32768,
+		"iS": 17838,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/jeep.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-4/tailgate.png": {
 		"ft": 32768,
 		"iS": 466019,
 		"oA": 0,
 		"oAP": "/deploy/img/section-4/tailgate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-4/toyota.png": {
+		"ft": 32768,
+		"iS": 6804,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/toyota.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -138,6 +160,28 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-4/vw.png": {
+		"ft": 32768,
+		"iS": 7465,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/vw.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-5/div.jpg": {
+		"ft": 16384,
+		"iS": 511037,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/div.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {

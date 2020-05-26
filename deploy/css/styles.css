@@ -326,6 +326,16 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0; }
 
+.show-for-sm {
+  display: block; }
+  @media (min-width: 768px) {
+    .show-for-sm {
+      display: none; } }
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
 /* =============
     Typography
 ============= */
@@ -641,6 +651,9 @@ header {
   padding-bottom: 15px;
   font-size: 1.25rem; }
 
+#s4 p {
+  font-size: 1.125rem; }
+
 #s4 #div-img-2 {
   background-image: url("../img/section-4/div.jpg");
   width: 100%;
@@ -675,6 +688,11 @@ header {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  #s4 #tailgate h3 {
+    font-size: 1.125rem;
+    padding-top: 10px; }
+  #s4 #tailgate p {
+    padding-top: 5px; }
   #s4 #tailgate > div {
     background-image: url("../img/section-4/tailgate.png");
     height: 160px;
@@ -722,10 +740,26 @@ header {
   width: 20px;
   margin-left: 70px; }
 
+#s4 #rnd h3 {
+  font-size: 1.125rem;
+  text-align: center;
+  padding: 10px 0 5px; }
+
+#s4 #rnd p {
+  font-size: 1rem; }
+
 #s4 #rnd #jeep {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  #s4 #rnd #jeep section > div {
+    background-image: url("../img/section-4/jeep.png");
+    height: 95px;
+    background-position: center;
+    background-size: 95px;
+    background-repeat: no-repeat; }
+  #s4 #rnd #jeep section h3, #s4 #rnd #jeep section h6 {
+    text-align: center; }
 
 #s4 #rnd #s4-4 {
   background-color: #0085AA;
@@ -737,6 +771,14 @@ header {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  #s4 #rnd #toyota section > div {
+    background-image: url("../img/section-4/toyota.png");
+    height: 95px;
+    background-position: center;
+    background-size: 95px;
+    background-repeat: no-repeat; }
+  #s4 #rnd #toyota section h3, #s4 #rnd #toyota section h6 {
+    text-align: center; }
 
 #s4 #rnd #s4-5 {
   background-color: #0085AA;
@@ -748,9 +790,55 @@ header {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  #s4 #rnd #vw section > div {
+    background-image: url("../img/section-4/vw.png");
+    height: 95px;
+    background-position: center;
+    background-size: 95px;
+    background-repeat: no-repeat; }
+  #s4 #rnd #vw section h3, #s4 #rnd #vw section h6 {
+    text-align: center; }
 
 #s4 #s4-6 {
   background-color: #0085AA;
   height: 35px;
   width: 20px;
   margin-left: 230px; }
+
+/* =============
+    Section 5
+============= */
+#s5 h2 {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 1.25rem; }
+
+#s5 #div-img-3 {
+  background-image: url("../img/section-5/div.jpg");
+  width: 100%;
+  height: 5vh;
+  background-position: center;
+  background-size: cover; }
+
+#s5 #s5-1 {
+  background-color: #DF4C2C;
+  height: 35px;
+  width: 20px;
+  margin-left: 230px; }
+
+#s5 #s5-header h1 {
+  color: #fff;
+  background-color: #DF4C2C;
+  margin: 0 11px 0;
+  padding: 40px 12px 0;
+  border-radius: 8px;
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    #s5 #s5-header h1 {
+      margin: 50px 180px 0 10px;
+      font-size: 2.8125rem; } }
+#s5 #s5-header > div {
+  height: 10px;
+  width: 20px;
+  margin-left: 70px;
+  background-color: #DF4C2C; }

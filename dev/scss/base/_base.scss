@@ -13,3 +13,17 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
 }
+
+.show-for-sm{
+    display: block;
+    @include md{
+        display: none;
+    }
+}
+
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
