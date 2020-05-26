@@ -2,5 +2,114 @@
     Section 3
 ============= */
 #s3{
-    
+
+    h2{
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: rem-calc(20);
+    }
+
+    #div-img-1{
+        background-image: url("../img/section-3/div.jpg");
+        width: 100%;
+        height: 5vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #s3-1{
+        background-color: $green;
+        height: 35px;
+        width: 20px;
+        margin-left: 70px;
+    }
+
+    #s3-header{
+        h1{
+            color: $white;
+            background-color: $green;
+            margin: 0 11px 0;
+            padding: 40px 12px 0;
+            border-radius: 8px;
+            font-size: rem-calc(24);
+
+            @include md{
+                margin: 50px 180px 0 10px;
+                font-size: rem-calc(45);
+            }
+
+            @include lg{
+            }
+        }
+
+        h4{
+            padding: 10px 10px;
+            text-align: center;
+        }
+
+        >div{
+            height: 10px;
+            width: 20px;
+            margin-left: 150px;
+            background-color: $green;
+        }
+    }
+
+    #prices{
+        border: 3px solid $green;
+        margin: 0 5px;
+        padding: 25px 0 25px 13px;
+
+        h3{
+            font-size: rem-calc(18);
+        }
+        
+        ul{
+            li{
+                padding: 5px 0;
+            }
+
+            h5{
+                padding-left: 15px;
+                padding-right: 5px;
+                font-size: rem-calc(14);
+            }
+        }
+    }
+
+    #s3-2{
+        background-color: $green;
+        height: 20px;
+        width: 20px;
+        margin-left: 230px;
+    }
+
+    #s3-img{
+        border: 3px solid $green;
+        margin: 0 5px;
+        background-image: url("../img/section-3/center.jpg");
+        height: 30vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #s3-3{
+        background-color: $green;
+        height: 20px;
+        width: 20px;
+        margin-left: 230px;
+    }
+
+    #cnd{
+        border: 3px solid $green;
+        margin: 0 5px;
+        padding: 25px 0 25px 13px;
+    }
+
+    #s3-4{
+        background-color: $green;
+        height: 20px;
+        width: 20px;
+        margin-left: 150px;
+    }
 }
