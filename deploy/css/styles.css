@@ -671,7 +671,9 @@ header {
   height: 5vh;
   background-position: center;
   background-size: cover; }
-
+  @media (min-width: 768px) {
+    #s3 #div-img-1 {
+      height: 12vh; } }
 #s3 #s3-1 {
   background-color: #A8CC39;
   height: 35px;
@@ -687,7 +689,7 @@ header {
   font-size: 1.5rem; }
   @media (min-width: 768px) {
     #s3 #s3-header h1 {
-      margin: 50px 180px 0 10px;
+      margin: 0 180px 0 10px;
       font-size: 2.8125rem; } }
 #s3 #s3-header h4 {
   padding: 10px 10px;
@@ -698,45 +700,70 @@ header {
   width: 20px;
   margin-left: 150px;
   background-color: #A8CC39; }
+  @media (min-width: 768px) {
+    #s3 #s3-header > div {
+      margin-left: 374px; } }
+@media (min-width: 768px) {
+  #s3 #s3-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "price img" "coupon coupon"; } }
 
-#s3 #prices {
+#s3 #s3-content #prices {
   border: 3px solid #A8CC39;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
-  #s3 #prices h3 {
+  #s3 #s3-content #prices h3 {
     font-size: 1.125rem; }
-  #s3 #prices ul li {
+  #s3 #s3-content #prices ul li {
     padding: 5px 0; }
-  #s3 #prices ul h5 {
+  #s3 #s3-content #prices ul h5 {
     padding-left: 15px;
     padding-right: 5px;
     font-size: 0.875rem; }
-
-#s3 #s3-2 {
+  @media (min-width: 768px) {
+    #s3 #s3-content #prices {
+      margin: 0;
+      grid-area: price;
+      border: none;
+      border-bottom: 10px solid #A8CC39;
+      border-right: 10px solid #A8CC39; } }
+#s3 #s3-content #s3-2 {
   background-color: #A8CC39;
   height: 20px;
   width: 20px;
   margin-left: 230px; }
 
-#s3 #s3-img {
+#s3 #s3-content #s3-img {
   border: 3px solid #A8CC39;
   margin: 0 5px;
   background-image: url("../img/section-3/center.jpg");
   height: 30vh;
   background-position: center;
   background-size: cover; }
-
-#s3 #s3-3 {
+  @media (min-width: 768px) {
+    #s3 #s3-content #s3-img {
+      margin: 0;
+      height: 43vh;
+      grid-area: img;
+      border: none;
+      border-bottom: 10px solid #A8CC39;
+      border-left: 10px solid #A8CC39; } }
+#s3 #s3-content #s3-3 {
   background-color: #A8CC39;
   height: 20px;
   width: 20px;
   margin-left: 230px; }
 
-#s3 #cnd {
+#s3 #s3-content #cnd {
   border: 3px solid #A8CC39;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
-
+  @media (min-width: 768px) {
+    #s3 #s3-content #cnd {
+      margin: 0;
+      grid-area: coupon;
+      border: 10px solid #A8CC39; } }
 #s3 #s3-4 {
   background-color: #A8CC39;
   height: 20px;
