@@ -184,6 +184,72 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/deploy/img/section-6/div.jpg": {
+		"ft": 16384,
+		"iS": 368913,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/div.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/section-6/g1.jpg": {
+		"ft": 16384,
+		"iS": 513619,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/g1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/g2.jpg": {
+		"ft": 16384,
+		"iS": 268911,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/g2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/g3.jpg": {
+		"ft": 16384,
+		"iS": 816846,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/g3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/g4.jpg": {
+		"ft": 16384,
+		"iS": 690169,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/g4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/g5.jpg": {
+		"ft": 16384,
+		"iS": 280743,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/g5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
