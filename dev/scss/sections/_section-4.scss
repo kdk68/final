@@ -9,6 +9,12 @@
         font-size: rem-calc(20);
     }
 
+    h3{
+        font-size: rem-calc(18);
+        text-align: center;
+        padding: 10px 0 5px;
+    }
+
     p{
         font-size: rem-calc(18);
     }
@@ -59,11 +65,6 @@
         margin: 0 5px;
         padding: 25px 0 25px 13px;
 
-        h3{
-            font-size: rem-calc(18);
-            padding-top: 10px;
-        }
-
         p{
             padding-top: 5px;
         }
@@ -74,6 +75,10 @@
             width: 240px;
             background-size: cover;
             background-position: center;
+        }
+
+        @include md{
+
         }
     }
 
@@ -129,11 +134,6 @@
     }
 
     #rnd{
-        h3{
-            font-size: rem-calc(18);
-            text-align: center;
-            padding: 10px 0 5px;
-        }
 
         p{
             font-size: rem-calc(16);

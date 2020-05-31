@@ -812,6 +812,11 @@ header {
   padding-bottom: 15px;
   font-size: 1.25rem; }
 
+#s4 h3 {
+  font-size: 1.125rem;
+  text-align: center;
+  padding: 10px 0 5px; }
+
 #s4 p {
   font-size: 1.125rem; }
 
@@ -849,9 +854,6 @@ header {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
-  #s4 #tailgate h3 {
-    font-size: 1.125rem;
-    padding-top: 10px; }
   #s4 #tailgate p {
     padding-top: 5px; }
   #s4 #tailgate > div {
@@ -900,11 +902,6 @@ header {
   height: 35px;
   width: 20px;
   margin-left: 70px; }
-
-#s4 #rnd h3 {
-  font-size: 1.125rem;
-  text-align: center;
-  padding: 10px 0 5px; }
 
 #s4 #rnd p {
   font-size: 1rem; }
