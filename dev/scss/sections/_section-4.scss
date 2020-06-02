@@ -7,16 +7,51 @@
         text-align: center;
         padding-bottom: 15px;
         font-size: rem-calc(20);
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(30);
+        }
     }
 
     h3{
         font-size: rem-calc(18);
         text-align: center;
         padding: 10px 0 5px;
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(20);
+        }
+    }
+
+    h6{
+        text-align: center;
+        font-size: rem-calc(18);
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(18);
+        }
     }
 
     p{
         font-size: rem-calc(18);
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding-top: 5px;
+
+        @include md{
+            font-size: rem-calc(20);
+            padding: 0 40px 0 30px;
+        }
     }
 
     #div-img-2{
@@ -65,10 +100,6 @@
         margin: 0 5px;
         padding: 25px 0 25px 13px;
 
-        p{
-            padding-top: 5px;
-        }
-
         >div{
             background-image: url("../img/section-4/tailgate.png");
             height: 160px;
@@ -90,10 +121,20 @@
     }
 
     #guests{
+        @include md{
+            display: flex;
+        }
+
         #eagle{
             border: 3px solid $blue;
             margin: 0 5px;
             padding: 25px 0 25px 13px;
+
+            @include md{
+                margin: 0;
+                border: none;
+                border-right: 10px solid $blue;
+            }
 
             >div{
                 background-image: url("../img/section-4/eagle.png");
@@ -115,6 +156,12 @@
             border: 3px solid $blue;
             margin: 0 5px;
             padding: 25px 0 25px 13px;
+
+            @include md{
+                margin: 0;
+                border: none;
+                border-left: 10px solid $blue;
+            }
 
             >div{
                 background-image: url("../img/section-4/uzi.png");
@@ -152,7 +199,7 @@
                     background-repeat: no-repeat;
                 } 
 
-                h3,h6{
+                h3{
                     text-align: center;
                 }
             }
@@ -180,7 +227,7 @@
                      background-repeat: no-repeat;
                  } 
  
-                 h3,h6{
+                 h3{
                      text-align: center;
                  }
              }
@@ -207,7 +254,7 @@
                      background-repeat: no-repeat;
                  } 
  
-                 h3,h6{
+                 h3{
                      text-align: center;
                  }
              }

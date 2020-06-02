@@ -810,16 +810,42 @@ header {
 #s4 h2 {
   text-align: center;
   padding-bottom: 15px;
-  font-size: 1.25rem; }
-
+  font-size: 1.25rem;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+  @media (min-width: 768px) {
+    #s4 h2 {
+      font-size: 1.875rem; } }
 #s4 h3 {
   font-size: 1.125rem;
   text-align: center;
-  padding: 10px 0 5px; }
-
+  padding: 10px 0 5px;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+  @media (min-width: 768px) {
+    #s4 h3 {
+      font-size: 1.25rem; } }
+#s4 h6 {
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+  @media (min-width: 768px) {
+    #s4 h6 {
+      font-size: 1.125rem; } }
 #s4 p {
-  font-size: 1.125rem; }
-
+  font-size: 1.125rem;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 5px; }
+  @media (min-width: 768px) {
+    #s4 p {
+      font-size: 1.25rem;
+      padding: 0 40px 0 30px; } }
 #s4 #div-img-2 {
   background-image: url("../img/section-4/div.jpg");
   width: 100%;
@@ -854,8 +880,6 @@ header {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
-  #s4 #tailgate p {
-    padding-top: 5px; }
   #s4 #tailgate > div {
     background-image: url("../img/section-4/tailgate.png");
     height: 160px;
@@ -869,10 +893,19 @@ header {
   width: 20px;
   margin-left: 230px; }
 
+@media (min-width: 768px) {
+  #s4 #guests {
+    display: flex; } }
+
 #s4 #guests #eagle {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  @media (min-width: 768px) {
+    #s4 #guests #eagle {
+      margin: 0;
+      border: none;
+      border-right: 10px solid #0085AA; } }
   #s4 #guests #eagle > div {
     background-image: url("../img/section-4/eagle.png");
     width: 265px;
@@ -890,6 +923,11 @@ header {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  @media (min-width: 768px) {
+    #s4 #guests #uzi {
+      margin: 0;
+      border: none;
+      border-left: 10px solid #0085AA; } }
   #s4 #guests #uzi > div {
     background-image: url("../img/section-4/uzi.png");
     width: 265px;
@@ -916,7 +954,7 @@ header {
     background-position: center;
     background-size: 95px;
     background-repeat: no-repeat; }
-  #s4 #rnd #jeep section h3, #s4 #rnd #jeep section h6 {
+  #s4 #rnd #jeep section h3 {
     text-align: center; }
 
 #s4 #rnd #s4-4 {
@@ -935,7 +973,7 @@ header {
     background-position: center;
     background-size: 95px;
     background-repeat: no-repeat; }
-  #s4 #rnd #toyota section h3, #s4 #rnd #toyota section h6 {
+  #s4 #rnd #toyota section h3 {
     text-align: center; }
 
 #s4 #rnd #s4-5 {
@@ -954,7 +992,7 @@ header {
     background-position: center;
     background-size: 95px;
     background-repeat: no-repeat; }
-  #s4 #rnd #vw section h3, #s4 #rnd #vw section h6 {
+  #s4 #rnd #vw section h3 {
     text-align: center; }
 
 #s4 #s4-6 {
