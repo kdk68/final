@@ -18,6 +18,7 @@
             }
 
             @include lg{
+                margin: 50px 470px 0 10px;
             }
         }
 
@@ -32,6 +33,10 @@
             @include md{
                 text-align: start;
             }
+
+            @include lg{
+                font-size: rem-calc(20);
+            }
         }
 
         >div{
@@ -41,7 +46,7 @@
             background-color: $orange;
 
             @include md{
-                margin-left: 374px;
+                margin-left: 50%;
             }
         }
     }
@@ -70,6 +75,10 @@
                 @include md{
                     font-size: rem-calc(20);
                 }
+
+                @include lg{
+                    font-size: rem-calc(25);
+                }
             }
 
             h3{
@@ -82,6 +91,10 @@
 
                 @include md{
                     font-size: rem-calc(20);
+                }
+
+                @include lg{
+                    font-size: rem-calc(25);
                 }
             }
 
@@ -117,6 +130,10 @@
                 border-bottom: 10px solid $orange;
                 border-left: 10px solid $orange;
             }
+
+            @include lg{
+                height: 20vh;
+            }
         }
 
         #s2-3{
@@ -142,6 +159,10 @@
                     font-size: rem-calc(20);
                     padding-right: 10px;
                 }
+
+                @include lg{
+                    font-size: rem-calc(25);
+                }
             }
 
             h3{
@@ -152,7 +173,10 @@
 
                 @include md{
                     font-size: rem-calc(20);
+                }
 
+                @include lg{
+                    font-size: rem-calc(25);
                 }
             }
 
@@ -164,6 +188,10 @@
 
                 @include md{
                     font-size: rem-calc(20);
+                }
+
+                @include lg{
+                    font-size: rem-calc(25);
                 }
             }
 
@@ -198,6 +226,10 @@
                 border-top: 10px solid $orange;
                 border-right: 10px solid $orange;
             }
+
+            @include lg{
+                height: 12vh;
+            }
         }
 
         
@@ -207,6 +239,9 @@
         width: 20px;
         margin-left: 246px;
         background-color: $orange;
+
+        @include lg{
+            margin-left: 32.3%;
+        }
     } 
-    
 }
