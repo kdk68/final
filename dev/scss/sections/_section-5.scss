@@ -6,11 +6,33 @@
         text-align: center;
         padding-bottom: 5px;
         font-size: rem-calc(20);
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(30);
+        }
+    }
+
+    h4{
+        font-size: rem-calc(18);
+
+        @include md{
+            font-size: rem-calc(20);
+        }
     }
 
     p{
         font-size: rem-calc(18);
         padding: 5px 0;
+        font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+
+        @include md{
+            font-size: rem-calc(20);
+        }
     }
 
     #div-img-3{
@@ -38,7 +60,7 @@
             font-size: rem-calc(24);
 
             @include md{
-                margin: 50px 180px 0 10px;
+                margin: 0 180px 0 10px;
                 font-size: rem-calc(45);
             }
 
@@ -84,6 +106,31 @@
         border: 3px solid $orange;
         margin: 0 5px;
         padding: 25px 13px;
+
+        li{
+            font-size: rem-calc(18);
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+
+            @include md{
+                font-size: rem-calc(20);
+            }
+        }
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "as kb";
+
+            #as{
+                grid-area: as;
+            }
+
+            #kb{
+                grid-area: kb;
+            }
+        }
     }
 
     #s5-5{

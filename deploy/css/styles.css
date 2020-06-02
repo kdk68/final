@@ -332,8 +332,8 @@ h1 {
   font-style: normal; }
 
 h4 {
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
   font-style: normal; }
 
 @media (min-width: 768px) {
@@ -1013,12 +1013,27 @@ header {
 #s5 h2 {
   text-align: center;
   padding-bottom: 5px;
-  font-size: 1.25rem; }
-
+  font-size: 1.25rem;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+  @media (min-width: 768px) {
+    #s5 h2 {
+      font-size: 1.875rem; } }
+#s5 h4 {
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    #s5 h4 {
+      font-size: 1.25rem; } }
 #s5 p {
   font-size: 1.125rem;
-  padding: 5px 0; }
-
+  padding: 5px 0;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+  @media (min-width: 768px) {
+    #s5 p {
+      font-size: 1.25rem; } }
 #s5 #div-img-3 {
   background-image: url("../img/section-5/div.jpg");
   width: 100%;
@@ -1041,7 +1056,7 @@ header {
   font-size: 1.5rem; }
   @media (min-width: 768px) {
     #s5 #s5-header h1 {
-      margin: 50px 180px 0 10px;
+      margin: 0 180px 0 10px;
       font-size: 2.8125rem; } }
 #s5 #s5-header > div {
   height: 10px;
@@ -1075,7 +1090,23 @@ header {
   border: 3px solid #DF4C2C;
   margin: 0 5px;
   padding: 25px 13px; }
-
+  #s5 #contacts li {
+    font-size: 1.125rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+    @media (min-width: 768px) {
+      #s5 #contacts li {
+        font-size: 1.25rem; } }
+  @media (min-width: 768px) {
+    #s5 #contacts {
+      display: grid;
+      grid-template-columns: 50% auto;
+      grid-template-areas: "as kb"; }
+      #s5 #contacts #as {
+        grid-area: as; }
+      #s5 #contacts #kb {
+        grid-area: kb; } }
 #s5 #s5-5 {
   background-color: #DF4C2C;
   height: 35px;
