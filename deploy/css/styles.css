@@ -892,7 +892,9 @@ header {
   height: 35px;
   width: 20px;
   margin-left: 230px; }
-
+  @media (min-width: 768px) {
+    #s4 #s4-2 {
+      margin-left: 50%; } }
 @media (min-width: 768px) {
   #s4 #guests {
     display: flex; } }
@@ -904,6 +906,7 @@ header {
   @media (min-width: 768px) {
     #s4 #guests #eagle {
       margin: 0;
+      padding: 25px 0;
       border: none;
       border-right: 10px solid #0085AA; } }
   #s4 #guests #eagle > div {
@@ -926,6 +929,7 @@ header {
   @media (min-width: 768px) {
     #s4 #guests #uzi {
       margin: 0;
+      padding: 25px 0;
       border: none;
       border-left: 10px solid #0085AA; } }
   #s4 #guests #uzi > div {
@@ -940,7 +944,9 @@ header {
   height: 35px;
   width: 20px;
   margin-left: 70px; }
-
+  @media (min-width: 768px) {
+    #s4 #s4-3 {
+      margin-left: 50%; } }
 #s4 #rnd p {
   font-size: 1rem; }
 

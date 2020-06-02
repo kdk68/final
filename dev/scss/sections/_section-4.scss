@@ -118,6 +118,10 @@
         height: 35px;
         width: 20px;
         margin-left: 230px;
+
+        @include md{
+            margin-left: 50%;
+        }
     }
 
     #guests{
@@ -132,6 +136,7 @@
 
             @include md{
                 margin: 0;
+                padding: 25px 0;
                 border: none;
                 border-right: 10px solid $blue;
             }
@@ -159,6 +164,7 @@
 
             @include md{
                 margin: 0;
+                padding: 25px 0;
                 border: none;
                 border-left: 10px solid $blue;
             }
@@ -178,6 +184,10 @@
         height: 35px;
         width: 20px;
         margin-left: 70px;
+
+        @include md{
+            margin-left: 50%;
+        }
     }
 
     #rnd{
