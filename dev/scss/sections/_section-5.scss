@@ -41,6 +41,10 @@
         height: 5vh;
         background-position: center;
         background-size: cover;
+
+        @include md{
+            height: 10vh;
+        }
     }
 
     #s5-1{
@@ -73,33 +77,64 @@
             width: 20px;
             margin-left: 70px;
             background-color: $orange;
+
+            @include md{
+                margin-left: 50%;
+            }
         }
     }
 
-    #faq{
-        border: 3px solid $orange;
-        margin: 0 5px;
-        padding: 25px 0 25px 13px;
-    }
+    #md-grid{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "faq press";
+        }
 
-    #s5-2{
-        background-color: $orange;
-        height: 35px;
-        width: 20px;
-        margin-left: 230px;
-    }
+        #faq{
+            grid-area: faq;
+            border: 3px solid $orange;
+            margin: 0 5px;
+            padding: 25px 0 25px 13px;
 
-    #press{
-        border: 3px solid $orange;
-        margin: 0 5px;
-        padding: 25px 13px;
+            @include md{
+                margin: 0;
+                border: none;
+                border-right: 10px solid $orange;               
+            }
+        }
+
+        #s5-2{
+            background-color: $orange;
+            height: 35px;
+            width: 20px;
+            margin-left: 230px;
+        }
+
+        #press{
+            grid-area: press;
+            border: 3px solid $orange;
+            margin: 0 5px;
+            padding: 25px 13px;
+
+            @include md{
+                margin: 0;
+                border: none;
+                border-left: 10px solid $orange;               
+            }
+        }
     }
+    
 
     #s5-3{
         background-color: $orange;
         height: 35px;
         width: 20px;
         margin-left: 150px;
+
+        @include md{
+            margin-left: 50%;
+        }
     }
 
     #contacts{
@@ -129,6 +164,7 @@
 
             #kb{
                 grid-area: kb;
+                padding-top: 43px;
             }
         }
     }

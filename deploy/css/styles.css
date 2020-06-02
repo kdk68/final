@@ -695,7 +695,7 @@ header {
   background-size: cover; }
   @media (min-width: 768px) {
     #s3 #div-img-1 {
-      height: 12vh; } }
+      height: 10vh; } }
 #s3 #s3-1 {
   background-color: #A8CC39;
   height: 35px;
@@ -849,10 +849,12 @@ header {
 #s4 #div-img-2 {
   background-image: url("../img/section-4/div.jpg");
   width: 100%;
-  height: 12vh;
+  height: 5vh;
   background-position: center;
   background-size: cover; }
-
+  @media (min-width: 768px) {
+    #s4 #div-img-2 {
+      height: 10vh; } }
 #s4 #s4-1 {
   background-color: #0085AA;
   height: 35px;
@@ -1040,7 +1042,9 @@ header {
   height: 5vh;
   background-position: center;
   background-size: cover; }
-
+  @media (min-width: 768px) {
+    #s5 #div-img-3 {
+      height: 10vh; } }
 #s5 #s5-1 {
   background-color: #DF4C2C;
   height: 35px;
@@ -1063,29 +1067,49 @@ header {
   width: 20px;
   margin-left: 70px;
   background-color: #DF4C2C; }
+  @media (min-width: 768px) {
+    #s5 #s5-header > div {
+      margin-left: 50%; } }
+@media (min-width: 768px) {
+  #s5 #md-grid {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "faq press"; } }
 
-#s5 #faq {
+#s5 #md-grid #faq {
+  grid-area: faq;
   border: 3px solid #DF4C2C;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
-
-#s5 #s5-2 {
+  @media (min-width: 768px) {
+    #s5 #md-grid #faq {
+      margin: 0;
+      border: none;
+      border-right: 10px solid #DF4C2C; } }
+#s5 #md-grid #s5-2 {
   background-color: #DF4C2C;
   height: 35px;
   width: 20px;
   margin-left: 230px; }
 
-#s5 #press {
+#s5 #md-grid #press {
+  grid-area: press;
   border: 3px solid #DF4C2C;
   margin: 0 5px;
   padding: 25px 13px; }
-
+  @media (min-width: 768px) {
+    #s5 #md-grid #press {
+      margin: 0;
+      border: none;
+      border-left: 10px solid #DF4C2C; } }
 #s5 #s5-3 {
   background-color: #DF4C2C;
   height: 35px;
   width: 20px;
   margin-left: 150px; }
-
+  @media (min-width: 768px) {
+    #s5 #s5-3 {
+      margin-left: 50%; } }
 #s5 #contacts {
   border: 3px solid #DF4C2C;
   margin: 0 5px;
@@ -1106,7 +1130,8 @@ header {
       #s5 #contacts #as {
         grid-area: as; }
       #s5 #contacts #kb {
-        grid-area: kb; } }
+        grid-area: kb;
+        padding-top: 43px; } }
 #s5 #s5-5 {
   background-color: #DF4C2C;
   height: 35px;
@@ -1122,7 +1147,9 @@ header {
   height: 5vh;
   background-position: center;
   background-size: cover; }
-
+  @media (min-width: 768px) {
+    #s6 #div-img-4 {
+      height: 10vh; } }
 #s6 #s6-1 {
   background-color: #A8CC39;
   height: 35px;
@@ -1138,10 +1165,10 @@ header {
   font-size: 1.5rem; }
   @media (min-width: 768px) {
     #s6 #s6-header h1 {
-      margin: 50px 180px 0 10px;
+      margin: 0 180px 0 10px;
       font-size: 2.8125rem; } }
 #s6 #s6-header > div {
-  height: 10px;
+  height: 20px;
   width: 20px;
   margin-left: 150px;
   background-color: #A8CC39; }
@@ -1151,6 +1178,12 @@ header {
   gap: 20px;
   grid-template-rows: repeat(5, 160px);
   grid-template-areas: "g1" "g2" "g3" "g4" "g5"; }
+  @media (min-width: 768px) {
+    #s6 ul {
+      gap: 0px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 100px);
+      grid-template-areas: "g1 g1 g1 g1" "g1 g1 g1 g1" "g1 g1 g1 g1" "g2 g3 g4 g5"; } }
   #s6 ul li {
     background-position: center;
     background-size: cover; }
@@ -1162,15 +1195,36 @@ header {
   #s6 ul #g1 {
     background-image: url("../img/section-6/g1.jpg");
     grid-area: g1; }
+    @media (min-width: 768px) {
+      #s6 ul #g1 {
+        border-bottom: 10px solid #A8CC39; } }
   #s6 ul #g2 {
     background-image: url("../img/section-6/g2.jpg");
     grid-area: g2; }
+    @media (min-width: 768px) {
+      #s6 ul #g2 {
+        border-top: 10px solid #A8CC39;
+        border-right: 10px solid #A8CC39; } }
   #s6 ul #g3 {
     background-image: url("../img/section-6/g3.jpg");
     grid-area: g3; }
+    @media (min-width: 768px) {
+      #s6 ul #g3 {
+        border-top: 10px solid #A8CC39;
+        border-right: 10px solid #A8CC39;
+        border-left: 10px solid #A8CC39; } }
   #s6 ul #g4 {
     background-image: url("../img/section-6/g4.jpg");
     grid-area: g4; }
+    @media (min-width: 768px) {
+      #s6 ul #g4 {
+        border-top: 10px solid #A8CC39;
+        border-right: 10px solid #A8CC39;
+        border-left: 10px solid #A8CC39; } }
   #s6 ul #g5 {
     background-image: url("../img/section-6/g5.jpg");
     grid-area: g5; }
+    @media (min-width: 768px) {
+      #s6 ul #g5 {
+        border-top: 10px solid #A8CC39;
+        border-left: 10px solid #A8CC39; } }
