@@ -473,7 +473,14 @@ header {
 /* =============
     Footer
 ============= */
-#footer {
+@media (min-width: 1200px) {
+  #footer {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". container ."; } }
+
+#footer #footer-container {
+  grid-area: container;
   border-top: 3px solid #0085AA;
   display: grid;
   grid-template-columns: 65% auto;
@@ -481,21 +488,21 @@ header {
   text-align: center;
   padding: 10px; }
   @media (min-width: 768px) {
-    #footer {
+    #footer #footer-container {
       grid-template-columns: 15% auto 20%; } }
-  #footer #sm-logo {
+  #footer #footer-container #sm-logo {
     grid-area: logo;
     justify-self: end; }
-  #footer ul {
+  #footer #footer-container ul {
     grid-area: links;
     display: flex; }
-    #footer ul li {
+    #footer #footer-container ul li {
       margin: 0 10% 0 0; }
-      #footer ul li a:link, #footer ul li a:visited {
+      #footer #footer-container ul li a:link, #footer #footer-container ul li a:visited {
         color: #454545;
         font-size: 2.1875rem;
         transition: 0.25s; }
-      #footer ul li a:hover, #footer ul li a:active {
+      #footer #footer-container ul li a:hover, #footer #footer-container ul li a:active {
         color: #A8CC39; }
 
 /* =============

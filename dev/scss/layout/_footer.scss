@@ -2,39 +2,48 @@
     Footer
 ============= */
 #footer{
-    border-top: 3px solid $blue;
-    display: grid;
-    grid-template-columns: 65% auto;
-    grid-template-areas: "links logo";
-    text-align: center;
-    padding: 10px;
-
-    @include md{
-        grid-template-columns: 15% auto 20%;
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". container .";
     }
 
-    #sm-logo{
-        grid-area: logo;
-        justify-self: end;
+    #footer-container{
+        grid-area: container;
+        border-top: 3px solid $blue;
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-template-areas: "links logo";
+        text-align: center;
+        padding: 10px;
 
         @include md{
+            grid-template-columns: 15% auto 20%;
         }
-    }
 
-    ul{
-        grid-area: links;
-        display: flex;
-        
-        li{
-            margin: 0 10% 0 0;
-            a:link, a:visited{
-                color: $grey;
-                font-size: rem-calc(35);
-                transition: 0.25s;
+        #sm-logo{
+            grid-area: logo;
+            justify-self: end;
+
+            @include md{
             }
+        }
 
-            a:hover, a:active{
-                color: $green;
+        ul{
+            grid-area: links;
+            display: flex;
+            
+            li{
+                margin: 0 10% 0 0;
+                a:link, a:visited{
+                    color: $grey;
+                    font-size: rem-calc(35);
+                    transition: 0.25s;
+                }
+
+                a:hover, a:active{
+                    color: $green;
+                }
             }
         }
     }
