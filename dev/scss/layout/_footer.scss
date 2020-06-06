@@ -3,16 +3,30 @@
 ============= */
 #footer{
     border-top: 3px solid $blue;
-    display: flex;
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-areas: "links logo";
     text-align: center;
     padding: 10px;
 
-    ul{
-        display: flex;
-        justify-content: center;
+    @include md{
+        grid-template-columns: 15% auto 20%;
+    }
 
+    #sm-logo{
+        grid-area: logo;
+        justify-self: end;
+
+        @include md{
+        }
+    }
+
+    ul{
+        grid-area: links;
+        display: flex;
+        
         li{
-            margin: 0 5px;
+            margin: 0 10% 0 0;
             a:link, a:visited{
                 color: $grey;
                 font-size: rem-calc(35);

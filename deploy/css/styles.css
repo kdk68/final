@@ -422,7 +422,7 @@ header {
   border-bottom: 3px solid #A8CC39; }
   header > div {
     display: grid;
-    grid-template-columns: 38% auto;
+    grid-template-columns: 30% auto;
     grid-template-areas: "burger logo" "nav nav"; }
     @media (min-width: 768px) {
       header > div {
@@ -448,7 +448,7 @@ header {
     header > div #logo {
       grid-area: logo;
       padding: 0;
-      justify-content: right;
+      justify-self: end;
       align-items: center; }
       header > div #logo img {
         height: 50px;
@@ -472,14 +472,22 @@ header {
 ============= */
 #footer {
   border-top: 3px solid #0085AA;
-  display: flex;
+  display: grid;
+  grid-template-columns: 65% auto;
+  grid-template-areas: "links logo";
   text-align: center;
   padding: 10px; }
+  @media (min-width: 768px) {
+    #footer {
+      grid-template-columns: 15% auto 20%; } }
+  #footer #sm-logo {
+    grid-area: logo;
+    justify-self: end; }
   #footer ul {
-    display: flex;
-    justify-content: center; }
+    grid-area: links;
+    display: flex; }
     #footer ul li {
-      margin: 0 5px; }
+      margin: 0 10% 0 0; }
       #footer ul li a:link, #footer ul li a:visited {
         color: #454545;
         font-size: 2.1875rem;
