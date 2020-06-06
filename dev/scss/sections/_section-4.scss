@@ -27,6 +27,10 @@
         @include md{
             font-size: rem-calc(20);
         }
+
+        @include lg{
+            font-size: rem-calc(25);
+        }
     }
 
     h6{
@@ -51,6 +55,10 @@
         @include md{
             font-size: rem-calc(20);
             padding: 0 40px 0 30px;
+        }
+
+        @include lg{
+            font-size: rem-calc(25);
         }
     }
 
@@ -96,14 +104,32 @@
             width: 20px;
             margin-left: 150px;
             background-color: $blue;
+
+            @include lg{
+                margin-left: 32.3%;
+            }
         }
     }
 
     #s4-content{
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "eagles tail tail"
+            "uzi tail tail";
+        }
         #tailgate{
+            grid-area: tail;
             border: 3px solid $blue;
             margin: 0 5px;
             padding: 25px 0 25px 13px;
+
+            @include lg{
+                margin: 0;
+                border: none;
+                border-left: 10px solid $blue;
+            }
 
             >div{
                 background-image: url("../img/section-4/tailgate.png");
@@ -129,6 +155,10 @@
             @include md{
                 margin-left: 48.7%;
             }
+
+            @include lg{
+                display: none;
+            }
         }
 
         #guests{
@@ -136,6 +166,10 @@
                 display: grid;
                 grid-template-columns: 50% auto;
                 grid-template-areas: "eagles uzi";
+            }
+
+            @include lg{
+                display: block;
             }
 
             #eagle{
@@ -149,6 +183,11 @@
                     padding: 25px 0;
                     border: none;
                     border-right: 10px solid $blue;
+                }
+
+                @include lg{
+                    border-bottom: 10px solid $blue;
+                    height: 350px;
                 }
 
                 >div{
@@ -181,12 +220,20 @@
                     border-left: 10px solid $blue;
                 }
 
+                @include lg{
+                    border-right: 10px solid $blue;
+                    border-top: 10px solid $blue;
+                    border-left: none;
+                    height: 320px;
+                }
+
                 >div{
                     background-image: url("../img/section-4/uzi.png");
                     width: 265px;
                     height: 155px;
                     background-position: 0 0;
                     background-size: 265px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -203,12 +250,13 @@
         @include md{
             margin-left: 48.7%;
         }
+
+        @include lg{
+            margin-left: 32.3%;
+        }
     }
 
     #rnd{
-        p{
-            font-size: rem-calc(16);
-        }
 
         #jeep{
             border: 3px solid $blue;
@@ -222,6 +270,16 @@
                     background-position: center;
                     background-size: 95px;
                     background-repeat: no-repeat;
+
+                    @include md{
+                        height: 117px;
+                        background-size: 117px;
+                    }
+
+                    @include lg{
+                        height: 150px;
+                        background-size: 150px;
+                    }
                 } 
 
                 h3{
@@ -250,6 +308,16 @@
                      background-position: center;
                      background-size: 95px;
                      background-repeat: no-repeat;
+
+                     @include md{
+                        height: 112px;
+                        background-size: 112px;
+                    }
+
+                    @include lg{
+                        height: 150px;
+                        background-size: 150px;
+                    }
                  } 
  
                  h3{
@@ -277,6 +345,16 @@
                      background-position: center;
                      background-size: 95px;
                      background-repeat: no-repeat;
+
+                     @include md{
+                        height: 112px;
+                        background-size: 112px;
+                    }
+
+                    @include lg{
+                        height: 150px;
+                        background-size: 150px;
+                    }
                  } 
  
                  h3{

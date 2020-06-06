@@ -45,6 +45,12 @@ h4{
     }
 }
 
+.show-for-lg{
+    @include lg{
+        display: block;
+    }
+}
+
 .hide-for-lg{
     @include lg{
         display: none;

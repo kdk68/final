@@ -351,6 +351,10 @@ h4 {
     .show-for-md {
       display: block; } }
 @media (min-width: 992px) {
+  .show-for-lg {
+    display: block; } }
+
+@media (min-width: 992px) {
   .hide-for-lg {
     display: none; } }
 
@@ -871,6 +875,9 @@ header {
   @media (min-width: 768px) {
     #s4 h3 {
       font-size: 1.25rem; } }
+  @media (min-width: 992px) {
+    #s4 h3 {
+      font-size: 1.5625rem; } }
 #s4 h6 {
   text-align: center;
   font-size: 1.125rem;
@@ -890,6 +897,9 @@ header {
     #s4 p {
       font-size: 1.25rem;
       padding: 0 40px 0 30px; } }
+  @media (min-width: 992px) {
+    #s4 p {
+      font-size: 1.5625rem; } }
 #s4 #div-img-2 {
   background-image: url("../img/section-4/div.jpg");
   width: 100%;
@@ -921,11 +931,25 @@ header {
   width: 20px;
   margin-left: 150px;
   background-color: #0085AA; }
+  @media (min-width: 992px) {
+    #s4 #s4-header > div {
+      margin-left: 32.3%; } }
+@media (min-width: 992px) {
+  #s4 #s4-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "eagles tail tail" "uzi tail tail"; } }
 
 #s4 #s4-content #tailgate {
+  grid-area: tail;
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
+  @media (min-width: 992px) {
+    #s4 #s4-content #tailgate {
+      margin: 0;
+      border: none;
+      border-left: 10px solid #0085AA; } }
   #s4 #s4-content #tailgate > div {
     background-image: url("../img/section-4/tailgate.png");
     height: 160px;
@@ -945,11 +969,18 @@ header {
   @media (min-width: 768px) {
     #s4 #s4-content #s4-2 {
       margin-left: 48.7%; } }
+  @media (min-width: 992px) {
+    #s4 #s4-content #s4-2 {
+      display: none; } }
 @media (min-width: 768px) {
   #s4 #s4-content #guests {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "eagles uzi"; } }
+
+@media (min-width: 992px) {
+  #s4 #s4-content #guests {
+    display: block; } }
 
 #s4 #s4-content #guests #eagle {
   grid-area: eagles;
@@ -962,6 +993,10 @@ header {
       padding: 25px 0;
       border: none;
       border-right: 10px solid #0085AA; } }
+  @media (min-width: 992px) {
+    #s4 #s4-content #guests #eagle {
+      border-bottom: 10px solid #0085AA;
+      height: 350px; } }
   #s4 #s4-content #guests #eagle > div {
     background-image: url("../img/section-4/eagle.png");
     width: 265px;
@@ -987,12 +1022,19 @@ header {
       padding: 25px 0;
       border: none;
       border-left: 10px solid #0085AA; } }
+  @media (min-width: 992px) {
+    #s4 #s4-content #guests #uzi {
+      border-right: 10px solid #0085AA;
+      border-top: 10px solid #0085AA;
+      border-left: none;
+      height: 320px; } }
   #s4 #s4-content #guests #uzi > div {
     background-image: url("../img/section-4/uzi.png");
     width: 265px;
     height: 155px;
     background-position: 0 0;
-    background-size: 265px; }
+    background-size: 265px;
+    margin: 0 auto; }
 
 #s4 #s4-3 {
   background-color: #0085AA;
@@ -1002,9 +1044,9 @@ header {
   @media (min-width: 768px) {
     #s4 #s4-3 {
       margin-left: 48.7%; } }
-#s4 #rnd p {
-  font-size: 1rem; }
-
+  @media (min-width: 992px) {
+    #s4 #s4-3 {
+      margin-left: 32.3%; } }
 #s4 #rnd #jeep {
   border: 3px solid #0085AA;
   margin: 0 5px;
@@ -1015,6 +1057,14 @@ header {
     background-position: center;
     background-size: 95px;
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #s4 #rnd #jeep section > div {
+        height: 117px;
+        background-size: 117px; } }
+    @media (min-width: 992px) {
+      #s4 #rnd #jeep section > div {
+        height: 150px;
+        background-size: 150px; } }
   #s4 #rnd #jeep section h3 {
     text-align: center; }
 
@@ -1034,6 +1084,14 @@ header {
     background-position: center;
     background-size: 95px;
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #s4 #rnd #toyota section > div {
+        height: 112px;
+        background-size: 112px; } }
+    @media (min-width: 992px) {
+      #s4 #rnd #toyota section > div {
+        height: 150px;
+        background-size: 150px; } }
   #s4 #rnd #toyota section h3 {
     text-align: center; }
 
@@ -1053,6 +1111,14 @@ header {
     background-position: center;
     background-size: 95px;
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #s4 #rnd #vw section > div {
+        height: 112px;
+        background-size: 112px; } }
+    @media (min-width: 992px) {
+      #s4 #rnd #vw section > div {
+        height: 150px;
+        background-size: 150px; } }
   #s4 #rnd #vw section h3 {
     text-align: center; }
 
