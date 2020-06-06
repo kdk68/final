@@ -48,6 +48,10 @@
             @include md{
                 margin-left: 48.7%;
             }
+
+            @include lg{
+                margin-left: 49%;
+            }
         }
     }
 
