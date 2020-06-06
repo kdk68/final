@@ -1162,6 +1162,21 @@ header {
 /* =============
     Section 5
 ============= */
+#div-img-3 {
+  background-image: url("../img/section-5/div.jpg");
+  width: 100%;
+  height: 5vh;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #div-img-3 {
+      height: 10vh; } }
+@media (min-width: 1200px) {
+  #s5 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". container ."; } }
+
 #s5 h2 {
   text-align: center;
   padding-bottom: 5px;
@@ -1189,119 +1204,109 @@ header {
   @media (min-width: 992px) {
     #s5 p {
       font-size: 1.5625rem; } }
-#s5 #div-img-3 {
-  background-image: url("../img/section-5/div.jpg");
-  width: 100%;
-  height: 5vh;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #s5 #div-img-3 {
-      height: 10vh; } }
-#s5 #s5-1 {
-  background-color: #DF4C2C;
-  height: 35px;
-  width: 20px;
-  margin-left: 230px; }
-
-#s5 #s5-header h1 {
-  color: #fff;
-  background-color: #DF4C2C;
-  margin: 0 11px 0;
-  padding: 40px 12px 0;
-  border-radius: 8px;
-  font-size: 1.5rem; }
-  @media (min-width: 768px) {
-    #s5 #s5-header h1 {
-      margin: 0 180px 0 10px;
-      font-size: 2.8125rem; } }
-#s5 #s5-header > div {
-  height: 10px;
-  width: 20px;
-  margin-left: 70px;
-  background-color: #DF4C2C; }
-  @media (min-width: 768px) {
-    #s5 #s5-header > div {
-      margin-left: 48.7%; } }
-  @media (min-width: 992px) {
-    #s5 #s5-header > div {
-      margin-left: 49%; } }
-@media (min-width: 768px) {
-  #s5 #md-grid {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "faq press"; } }
-
-#s5 #md-grid #faq {
-  grid-area: faq;
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  padding: 25px 0 25px 13px; }
-  #s5 #md-grid #faq ul li {
-    padding: 5px 0; }
-  @media (min-width: 768px) {
-    #s5 #md-grid #faq {
-      margin: 0;
-      border: none;
-      border-right: 10px solid #DF4C2C; } }
-#s5 #md-grid #s5-2 {
-  background-color: #DF4C2C;
-  height: 35px;
-  width: 20px;
-  margin-left: 230px; }
-
-#s5 #md-grid #press {
-  grid-area: press;
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  padding: 25px 13px; }
-  @media (min-width: 768px) {
-    #s5 #md-grid #press {
-      margin: 0;
-      border: none;
-      border-left: 10px solid #DF4C2C; } }
-#s5 #s5-3 {
-  background-color: #DF4C2C;
-  height: 35px;
-  width: 20px;
-  margin-left: 150px; }
-  @media (min-width: 768px) {
-    #s5 #s5-3 {
-      margin-left: 48.7%; } }
-  @media (min-width: 992px) {
-    #s5 #s5-3 {
-      margin-left: 49%; } }
-#s5 #contacts {
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  padding: 25px 13px; }
-  #s5 #contacts li {
-    font-size: 1.125rem;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal; }
+#s5 #s5-container {
+  grid-area: container; }
+  #s5 #s5-container #s5-1 {
+    background-color: #DF4C2C;
+    height: 35px;
+    width: 20px;
+    margin-left: 230px; }
+  #s5 #s5-container #s5-header h1 {
+    color: #fff;
+    background-color: #DF4C2C;
+    margin: 0 11px 0;
+    padding: 40px 12px 0;
+    border-radius: 8px;
+    font-size: 1.5rem; }
     @media (min-width: 768px) {
-      #s5 #contacts li {
-        font-size: 1.25rem; } }
+      #s5 #s5-container #s5-header h1 {
+        margin: 0 180px 0 10px;
+        font-size: 2.8125rem; } }
+  #s5 #s5-container #s5-header > div {
+    height: 10px;
+    width: 20px;
+    margin-left: 70px;
+    background-color: #DF4C2C; }
+    @media (min-width: 768px) {
+      #s5 #s5-container #s5-header > div {
+        margin-left: 48.7%; } }
     @media (min-width: 992px) {
-      #s5 #contacts li {
-        font-size: 1.5625rem; } }
+      #s5 #s5-container #s5-header > div {
+        margin-left: 49.2%; } }
   @media (min-width: 768px) {
-    #s5 #contacts {
+    #s5 #s5-container #md-grid {
       display: grid;
       grid-template-columns: 50% auto;
-      grid-template-areas: "as kb";
-      border: 10px solid #DF4C2C;
-      margin: 0; }
-      #s5 #contacts #as {
-        grid-area: as; }
-      #s5 #contacts #kb {
-        grid-area: kb; } }
-#s5 #s5-5 {
-  background-color: #DF4C2C;
-  height: 35px;
-  width: 20px;
-  margin-left: 70px; }
+      grid-template-areas: "faq press"; } }
+  #s5 #s5-container #md-grid #faq {
+    grid-area: faq;
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    padding: 25px 0 25px 13px; }
+    #s5 #s5-container #md-grid #faq ul li {
+      padding: 5px 0; }
+    @media (min-width: 768px) {
+      #s5 #s5-container #md-grid #faq {
+        margin: 0;
+        border: none;
+        border-right: 10px solid #DF4C2C; } }
+  #s5 #s5-container #md-grid #s5-2 {
+    background-color: #DF4C2C;
+    height: 35px;
+    width: 20px;
+    margin-left: 230px; }
+  #s5 #s5-container #md-grid #press {
+    grid-area: press;
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    padding: 25px 13px; }
+    @media (min-width: 768px) {
+      #s5 #s5-container #md-grid #press {
+        margin: 0;
+        border: none;
+        border-left: 10px solid #DF4C2C; } }
+  #s5 #s5-container #s5-3 {
+    background-color: #DF4C2C;
+    height: 35px;
+    width: 20px;
+    margin-left: 150px; }
+    @media (min-width: 768px) {
+      #s5 #s5-container #s5-3 {
+        margin-left: 48.7%; } }
+    @media (min-width: 992px) {
+      #s5 #s5-container #s5-3 {
+        margin-left: 49.2%; } }
+  #s5 #s5-container #contacts {
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    padding: 25px 13px; }
+    #s5 #s5-container #contacts li {
+      font-size: 1.125rem;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s5 #s5-container #contacts li {
+          font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #s5 #s5-container #contacts li {
+          font-size: 1.5625rem; } }
+    @media (min-width: 768px) {
+      #s5 #s5-container #contacts {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "as kb";
+        border: 10px solid #DF4C2C;
+        margin: 0; }
+        #s5 #s5-container #contacts #as {
+          grid-area: as; }
+        #s5 #s5-container #contacts #kb {
+          grid-area: kb; } }
+  #s5 #s5-container #s5-5 {
+    background-color: #DF4C2C;
+    height: 35px;
+    width: 20px;
+    margin-left: 70px; }
 
 /* =============
     Section 6
