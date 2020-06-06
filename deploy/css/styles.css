@@ -1271,6 +1271,8 @@ header {
     padding: 25px 0 25px 13px; }
     #s5 #s5-container #md-grid #faq ul li {
       padding: 5px 0; }
+      #s5 #s5-container #md-grid #faq ul li #button {
+        height: 25px; }
     @media (min-width: 768px) {
       #s5 #s5-container #md-grid #faq {
         margin: 0;

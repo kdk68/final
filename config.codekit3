@@ -19,17 +19,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/footer/PAS Logo.png": {
-		"ft": 32768,
-		"iS": 6863,
-		"oA": 0,
-		"oAP": "/deploy/img/footer/PAS Logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/deploy/img/footer/PAS_logo.jpg": {
 		"ft": 16384,
 		"iS": 35966,
@@ -39,6 +28,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/footer/PAS_Logo.png": {
+		"ft": 32768,
+		"iS": 6863,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/PAS_Logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/header/burger.png": {
@@ -193,6 +193,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/section-5/submit.png": {
+		"ft": 32768,
+		"iS": 5151,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/submit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-6/div.jpg": {
