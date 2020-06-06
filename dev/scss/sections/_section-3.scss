@@ -1,6 +1,25 @@
 /* =============
     Section 3
 ============= */
+#div-img-1{
+    background-image: url("../img/section-3/div.jpg");
+    width: 100%;
+    height: 5vh;
+    background-position: center;
+    background-size: cover;
+
+    @include md{
+        height: 10vh;
+    }
+}
+
+#s3-1{
+    background-color: $green;
+    height: 35px;
+    width: 20px;
+    margin-left: 70px;
+}
+
 #s3{
 
     h2{
@@ -39,163 +58,160 @@
         }
     }
 
-    #div-img-1{
-        background-image: url("../img/section-3/div.jpg");
-        width: 100%;
-        height: 5vh;
-        background-position: center;
-        background-size: cover;
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". container .";
+    }
 
-        @include md{
-            height: 10vh;
+    #s3-container{
+        grid-area: container;
+
+        #s3-header{
+            h1{
+                color: $white;
+                background-color: $green;
+                margin: 0 11px 0;
+                padding: 40px 12px 0;
+                border-radius: 8px;
+                font-size: rem-calc(24);
+
+                @include md{
+                    margin: 0 180px 0 10px;
+                    font-size: rem-calc(45);
+                }
+
+                @include lg{
+                }
+            }
+
+            h4{
+                padding: 10px 10px;
+                text-align: center;
+            }
+
+            >div{
+                height: 10px;
+                width: 20px;
+                margin-left: 150px;
+                background-color: $green;
+
+                @include md{
+                    margin-left: 374px;
+                }
+
+                @include xl{
+                    margin-left: 49.2%;
+                }
+            }
         }
-    }
 
-    #s3-1{
-        background-color: $green;
-        height: 35px;
-        width: 20px;
-        margin-left: 70px;
-    }
-
-    #s3-header{
-        h1{
-            color: $white;
-            background-color: $green;
-            margin: 0 11px 0;
-            padding: 40px 12px 0;
-            border-radius: 8px;
-            font-size: rem-calc(24);
+        #s3-content{
 
             @include md{
-                margin: 0 180px 0 10px;
-                font-size: rem-calc(45);
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "price img"
+                "coupon coupon";
+            }
+        #prices{
+                border: 3px solid $green;
+                margin: 0 5px;
+                padding: 25px 0 25px 13px;
+
+                
+                
+                ul{
+                    li{
+                        padding: 5px 0;
+                    }
+
+                    h4{
+                        font-size: rem-calc(18);
+                        font-family: futura-pt, sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+
+                        @include md{
+                            font-size: rem-calc(20);
+                        }
+                    }
+
+                    h5{
+                        padding-left: 15px;
+                        padding-right: 5px;
+                        font-size: rem-calc(14);
+                        font-family: futura-pt, sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+
+                        @include md{
+                            font-size: rem-calc(16);
+                        }
+                    }
+                }
+
+                @include md{
+                    margin: 0;
+                    grid-area: price;
+                    border: none;
+                    border-bottom: 10px solid $green;
+                    border-right: 10px solid $green;
+                }
             }
 
-            @include lg{
+            #s3-2{
+                background-color: $green;
+                height: 20px;
+                width: 20px;
+                margin-left: 230px;
             }
+
+            #s3-img{
+                border: 3px solid $green;
+                margin: 0 5px;
+                background-image: url("../img/section-3/center.jpg");
+                height: 30vh;
+                background-position: center;
+                background-size: cover;
+
+                @include md{
+                    margin: 0;
+                    height: 48vh;
+                    grid-area: img;
+                    border: none;
+                    border-bottom: 10px solid $green;
+                    border-left: 10px solid $green;
+                }
+            }
+
+            #s3-3{
+                background-color: $green;
+                height: 20px;
+                width: 20px;
+                margin-left: 230px;
+            }
+
+            #cnd{
+                border: 3px solid $green;
+                margin: 0 5px;
+                padding: 25px 0 25px 13px;
+
+                @include md{
+                    margin: 0;
+                    grid-area: coupon;
+                    border: 10px solid $green
+                }
+            } 
         }
 
-        h4{
-            padding: 10px 10px;
-            text-align: center;
-        }
-
-        >div{
-            height: 10px;
+        #s3-4{
+            background-color: $green;
+            height: 20px;
             width: 20px;
             margin-left: 150px;
-            background-color: $green;
-
-            @include md{
-                margin-left: 374px;
-            }
         }
     }
 
-    #s3-content{
-
-        @include md{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas: "price img"
-            "coupon coupon";
-        }
-       #prices{
-            border: 3px solid $green;
-            margin: 0 5px;
-            padding: 25px 0 25px 13px;
-
-            
-            
-            ul{
-                li{
-                    padding: 5px 0;
-                }
-
-                h4{
-                    font-size: rem-calc(18);
-                    font-family: futura-pt, sans-serif;
-                    font-weight: 500;
-                    font-style: normal;
-
-                    @include md{
-                        font-size: rem-calc(20);
-                    }
-                }
-
-                h5{
-                    padding-left: 15px;
-                    padding-right: 5px;
-                    font-size: rem-calc(14);
-                    font-family: futura-pt, sans-serif;
-                    font-weight: 500;
-                    font-style: normal;
-
-                    @include md{
-                        font-size: rem-calc(16);
-                    }
-                }
-            }
-
-            @include md{
-                margin: 0;
-                grid-area: price;
-                border: none;
-                border-bottom: 10px solid $green;
-                border-right: 10px solid $green;
-            }
-        }
-
-        #s3-2{
-            background-color: $green;
-            height: 20px;
-            width: 20px;
-            margin-left: 230px;
-        }
-
-        #s3-img{
-            border: 3px solid $green;
-            margin: 0 5px;
-            background-image: url("../img/section-3/center.jpg");
-            height: 30vh;
-            background-position: center;
-            background-size: cover;
-
-            @include md{
-                margin: 0;
-                height: 48vh;
-                grid-area: img;
-                border: none;
-                border-bottom: 10px solid $green;
-                border-left: 10px solid $green;
-            }
-        }
-
-        #s3-3{
-            background-color: $green;
-            height: 20px;
-            width: 20px;
-            margin-left: 230px;
-        }
-
-        #cnd{
-            border: 3px solid $green;
-            margin: 0 5px;
-            padding: 25px 0 25px 13px;
-
-            @include md{
-                margin: 0;
-                grid-area: coupon;
-                border: 10px solid $green
-            }
-        } 
-    }
-
-    #s3-4{
-        background-color: $green;
-        height: 20px;
-        width: 20px;
-        margin-left: 150px;
-    }
+    
 }

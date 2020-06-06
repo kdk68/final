@@ -736,6 +736,21 @@ header {
 /* =============
     Section 3
 ============= */
+#div-img-1 {
+  background-image: url("../img/section-3/div.jpg");
+  width: 100%;
+  height: 5vh;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #div-img-1 {
+      height: 10vh; } }
+#s3-1 {
+  background-color: #A8CC39;
+  height: 35px;
+  width: 20px;
+  margin-left: 70px; }
+
 #s3 h2 {
   text-align: center;
   padding-bottom: 15px;
@@ -763,122 +778,114 @@ header {
   @media (min-width: 768px) {
     #s3 p {
       font-size: 1.25rem; } }
-#s3 #div-img-1 {
-  background-image: url("../img/section-3/div.jpg");
-  width: 100%;
-  height: 5vh;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #s3 #div-img-1 {
-      height: 10vh; } }
-#s3 #s3-1 {
-  background-color: #A8CC39;
-  height: 35px;
-  width: 20px;
-  margin-left: 70px; }
-
-#s3 #s3-header h1 {
-  color: #fff;
-  background-color: #A8CC39;
-  margin: 0 11px 0;
-  padding: 40px 12px 0;
-  border-radius: 8px;
-  font-size: 1.5rem; }
-  @media (min-width: 768px) {
-    #s3 #s3-header h1 {
-      margin: 0 180px 0 10px;
-      font-size: 2.8125rem; } }
-#s3 #s3-header h4 {
-  padding: 10px 10px;
-  text-align: center; }
-
-#s3 #s3-header > div {
-  height: 10px;
-  width: 20px;
-  margin-left: 150px;
-  background-color: #A8CC39; }
-  @media (min-width: 768px) {
-    #s3 #s3-header > div {
-      margin-left: 374px; } }
-@media (min-width: 768px) {
-  #s3 #s3-content {
+@media (min-width: 1200px) {
+  #s3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "price img" "coupon coupon"; } }
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". container ."; } }
 
-#s3 #s3-content #prices {
-  border: 3px solid #A8CC39;
-  margin: 0 5px;
-  padding: 25px 0 25px 13px; }
-  #s3 #s3-content #prices ul li {
-    padding: 5px 0; }
-  #s3 #s3-content #prices ul h4 {
-    font-size: 1.125rem;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal; }
+#s3 #s3-container {
+  grid-area: container; }
+  #s3 #s3-container #s3-header h1 {
+    color: #fff;
+    background-color: #A8CC39;
+    margin: 0 11px 0;
+    padding: 40px 12px 0;
+    border-radius: 8px;
+    font-size: 1.5rem; }
     @media (min-width: 768px) {
-      #s3 #s3-content #prices ul h4 {
-        font-size: 1.25rem; } }
-  #s3 #s3-content #prices ul h5 {
-    padding-left: 15px;
-    padding-right: 5px;
-    font-size: 0.875rem;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal; }
+      #s3 #s3-container #s3-header h1 {
+        margin: 0 180px 0 10px;
+        font-size: 2.8125rem; } }
+  #s3 #s3-container #s3-header h4 {
+    padding: 10px 10px;
+    text-align: center; }
+  #s3 #s3-container #s3-header > div {
+    height: 10px;
+    width: 20px;
+    margin-left: 150px;
+    background-color: #A8CC39; }
     @media (min-width: 768px) {
-      #s3 #s3-content #prices ul h5 {
-        font-size: 1rem; } }
+      #s3 #s3-container #s3-header > div {
+        margin-left: 374px; } }
+    @media (min-width: 1200px) {
+      #s3 #s3-container #s3-header > div {
+        margin-left: 49.2%; } }
   @media (min-width: 768px) {
-    #s3 #s3-content #prices {
-      margin: 0;
-      grid-area: price;
-      border: none;
-      border-bottom: 10px solid #A8CC39;
-      border-right: 10px solid #A8CC39; } }
-#s3 #s3-content #s3-2 {
-  background-color: #A8CC39;
-  height: 20px;
-  width: 20px;
-  margin-left: 230px; }
-
-#s3 #s3-content #s3-img {
-  border: 3px solid #A8CC39;
-  margin: 0 5px;
-  background-image: url("../img/section-3/center.jpg");
-  height: 30vh;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #s3 #s3-content #s3-img {
-      margin: 0;
-      height: 48vh;
-      grid-area: img;
-      border: none;
-      border-bottom: 10px solid #A8CC39;
-      border-left: 10px solid #A8CC39; } }
-#s3 #s3-content #s3-3 {
-  background-color: #A8CC39;
-  height: 20px;
-  width: 20px;
-  margin-left: 230px; }
-
-#s3 #s3-content #cnd {
-  border: 3px solid #A8CC39;
-  margin: 0 5px;
-  padding: 25px 0 25px 13px; }
-  @media (min-width: 768px) {
-    #s3 #s3-content #cnd {
-      margin: 0;
-      grid-area: coupon;
-      border: 10px solid #A8CC39; } }
-#s3 #s3-4 {
-  background-color: #A8CC39;
-  height: 20px;
-  width: 20px;
-  margin-left: 150px; }
+    #s3 #s3-container #s3-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "price img" "coupon coupon"; } }
+  #s3 #s3-container #s3-content #prices {
+    border: 3px solid #A8CC39;
+    margin: 0 5px;
+    padding: 25px 0 25px 13px; }
+    #s3 #s3-container #s3-content #prices ul li {
+      padding: 5px 0; }
+    #s3 #s3-container #s3-content #prices ul h4 {
+      font-size: 1.125rem;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s3 #s3-container #s3-content #prices ul h4 {
+          font-size: 1.25rem; } }
+    #s3 #s3-container #s3-content #prices ul h5 {
+      padding-left: 15px;
+      padding-right: 5px;
+      font-size: 0.875rem;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s3 #s3-container #s3-content #prices ul h5 {
+          font-size: 1rem; } }
+    @media (min-width: 768px) {
+      #s3 #s3-container #s3-content #prices {
+        margin: 0;
+        grid-area: price;
+        border: none;
+        border-bottom: 10px solid #A8CC39;
+        border-right: 10px solid #A8CC39; } }
+  #s3 #s3-container #s3-content #s3-2 {
+    background-color: #A8CC39;
+    height: 20px;
+    width: 20px;
+    margin-left: 230px; }
+  #s3 #s3-container #s3-content #s3-img {
+    border: 3px solid #A8CC39;
+    margin: 0 5px;
+    background-image: url("../img/section-3/center.jpg");
+    height: 30vh;
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #s3 #s3-container #s3-content #s3-img {
+        margin: 0;
+        height: 48vh;
+        grid-area: img;
+        border: none;
+        border-bottom: 10px solid #A8CC39;
+        border-left: 10px solid #A8CC39; } }
+  #s3 #s3-container #s3-content #s3-3 {
+    background-color: #A8CC39;
+    height: 20px;
+    width: 20px;
+    margin-left: 230px; }
+  #s3 #s3-container #s3-content #cnd {
+    border: 3px solid #A8CC39;
+    margin: 0 5px;
+    padding: 25px 0 25px 13px; }
+    @media (min-width: 768px) {
+      #s3 #s3-container #s3-content #cnd {
+        margin: 0;
+        grid-area: coupon;
+        border: 10px solid #A8CC39; } }
+  #s3 #s3-container #s3-4 {
+    background-color: #A8CC39;
+    height: 20px;
+    width: 20px;
+    margin-left: 150px; }
 
 /* =============
     Section 4
