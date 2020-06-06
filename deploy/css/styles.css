@@ -471,7 +471,7 @@ header {
     Footer
 ============= */
 #footer {
-  border-top: 3px solid #A8CC39;
+  border-top: 3px solid #0085AA;
   display: flex;
   text-align: center;
   padding: 10px; }
@@ -1262,7 +1262,9 @@ header {
     #s5 #contacts {
       display: grid;
       grid-template-columns: 50% auto;
-      grid-template-areas: "as kb"; }
+      grid-template-areas: "as kb";
+      border: 10px solid #DF4C2C;
+      margin: 0; }
       #s5 #contacts #as {
         grid-area: as; }
       #s5 #contacts #kb {
@@ -1309,6 +1311,8 @@ header {
   background-color: #A8CC39; }
 
 #s6 ul {
+  margin-top: 0;
+  margin-bottom: 0;
   display: grid;
   gap: 20px;
   grid-template-rows: repeat(5, 160px);
@@ -1319,6 +1323,9 @@ header {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 100px);
       grid-template-areas: "g1 g1 g1 g1" "g1 g1 g1 g1" "g1 g1 g1 g1" "g2 g3 g4 g5"; } }
+  @media (min-width: 992px) {
+    #s6 ul {
+      grid-template-rows: repeat(4, 150px); } }
   #s6 ul li {
     background-position: center;
     background-size: cover; }
@@ -1332,34 +1339,28 @@ header {
     grid-area: g1; }
     @media (min-width: 768px) {
       #s6 ul #g1 {
-        border-bottom: 10px solid #A8CC39; } }
+        border: 10px solid #A8CC39; } }
   #s6 ul #g2 {
     background-image: url("../img/section-6/g2.jpg");
     grid-area: g2; }
     @media (min-width: 768px) {
       #s6 ul #g2 {
-        border-top: 10px solid #A8CC39;
-        border-right: 10px solid #A8CC39; } }
+        border: 10px solid #A8CC39; } }
   #s6 ul #g3 {
     background-image: url("../img/section-6/g3.jpg");
     grid-area: g3; }
     @media (min-width: 768px) {
       #s6 ul #g3 {
-        border-top: 10px solid #A8CC39;
-        border-right: 10px solid #A8CC39;
-        border-left: 10px solid #A8CC39; } }
+        border: 10px solid #A8CC39; } }
   #s6 ul #g4 {
     background-image: url("../img/section-6/g4.jpg");
     grid-area: g4; }
     @media (min-width: 768px) {
       #s6 ul #g4 {
-        border-top: 10px solid #A8CC39;
-        border-right: 10px solid #A8CC39;
-        border-left: 10px solid #A8CC39; } }
+        border: 10px solid #A8CC39; } }
   #s6 ul #g5 {
     background-image: url("../img/section-6/g5.jpg");
     grid-area: g5; }
     @media (min-width: 768px) {
       #s6 ul #g5 {
-        border-top: 10px solid #A8CC39;
-        border-left: 10px solid #A8CC39; } }
+        border: 10px solid #A8CC39; } }

@@ -176,6 +176,8 @@
             display: grid;
             grid-template-columns: 50% auto;
             grid-template-areas: "as kb";
+            border: 10px solid $orange;
+            margin: 0;
 
             #as{
                 grid-area: as;
