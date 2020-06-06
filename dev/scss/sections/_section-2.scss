@@ -2,250 +2,269 @@
     Section 2
 ============= */
 #s2{
-
-    #s2-header{
-        h1{
-            color: $white;
-            background-color: $orange;
-            margin: 10px 11px 0;
-            padding: 40px 12px 0;
-            border-radius: 8px;
-            font-size: rem-calc(24);
-
-            @include md{
-                margin: 50px 180px 0 10px;
-                font-size: rem-calc(45);
-            }
-
-            @include lg{
-                margin: 50px 470px 0 10px;
-            }
-        }
-
-        h4{
-            padding: 10px 10px;
-            text-align: center;
-            font-size: rem-calc(18);
-            font-family: futura-pt, sans-serif;
-            font-weight: 500;
-            font-style: normal;
-
-            @include md{
-                text-align: start;
-            }
-
-            @include lg{
-                font-size: rem-calc(20);
-            }
-        }
-
-        >div{
-            height: 10px;
-            width: 20px;
-            margin-left: 70px;
-            background-color: $orange;
-
-            @include md{
-                margin-left: 48.7%;
-            }
-
-            @include lg{
-                margin-left: 49%;
-            }
-        }
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". container .";
     }
 
-    #s2-content{
-        @include md{
-            display: grid;
-            gap: 0px;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-areas: "dnt dnt dnt map map map"
-            "img img article article article article";
-        }
+    #s2-container{
+        grid-area: container;
         
-       #dnt{
-            border: 3px solid $orange;
-            margin: 0 5px;
-            padding: 25px 0 25px 13px;
-
-            h2{
-                font-size: rem-calc(18);
-                padding-bottom: 2px;
-                font-family: futura-pt-bold, sans-serif;
-                font-weight: 700;
-                font-style: normal;
+        #s2-header{
+            h1{
+                color: $white;
+                background-color: $orange;
+                margin: 10px 11px 0;
+                padding: 40px 12px 0;
+                border-radius: 8px;
+                font-size: rem-calc(24);
 
                 @include md{
-                    font-size: rem-calc(20);
+                    margin: 50px 180px 0 10px;
+                    font-size: rem-calc(45);
                 }
 
                 @include lg{
-                    font-size: rem-calc(25);
+                    margin: 50px 470px 0 10px;
                 }
             }
 
-            h3{
-                font-size: rem-calc(18);
-                padding-bottom: 10px;
-                padding-left: 15px;
-                font-family: futura-pt, sans-serif;
-                font-weight: 500;
-                font-style: normal;
-
-                @include md{
-                    font-size: rem-calc(20);
-                }
-
-                @include lg{
-                    font-size: rem-calc(25);
-                }
-            }
-
-            @include md{
-                margin: 0;
-                grid-area: dnt;
-                border: none;
-                border-bottom: 10px solid $orange;
-                border-right: 10px solid $orange;
-            }
-        }
-
-        #s2-2{
-            height: 20px;
-            width: 20px;
-            margin-left: 150px;
-            background-color: $orange;
-        }
-
-        #s2-map{
-            border: 3px solid $orange;
-            margin: 0 5px;
-            height: 30vh;
-            background-image: url("../img/section-2/map.png");
-            background-position: center;
-            background-size: cover;
-
-            @include md{
-                margin: 0;
-                grid-area: map;
-                height: 40vh;
-                border: none;
-                border-bottom: 10px solid $orange;
-                border-left: 10px solid $orange;
-            }
-
-            @include lg{
-                height: 35vh;
-            }
-        }
-
-        #s2-3{
-            height: 20px;
-            width: 20px;
-            margin-left: 70px;
-            background-color: $orange;
-        }
-
-        article{
-            border: 3px solid $orange;
-            margin: 0 5px;
-            padding: 7px 0 0 4px;
-
-            h2{
-                font-size: rem-calc(18);
-                padding-top: 5px;
-                font-family: futura-pt-bold, sans-serif;
-                font-weight: 700;
-                font-style: normal;
-
-                @include md{
-                    font-size: rem-calc(20);
-                    padding-right: 10px;
-                }
-
-                @include lg{
-                    font-size: rem-calc(25);
-                }
-            }
-
-            h3{
-                font-size: rem-calc(17);
-                font-family: futura-pt, sans-serif;
-                font-weight: 500;
-                font-style: normal;
-
-                @include md{
-                    font-size: rem-calc(20);
-                }
-
-                @include lg{
-                    font-size: rem-calc(25);
-                }
-            }
-
-            ul{
+            h4{
+                padding: 10px 10px;
+                text-align: center;
                 font-size: rem-calc(18);
                 font-family: futura-pt, sans-serif;
                 font-weight: 500;
                 font-style: normal;
 
                 @include md{
-                    font-size: rem-calc(20);
+                    text-align: start;
                 }
 
                 @include lg{
-                    font-size: rem-calc(25);
+                    font-size: rem-calc(20);
                 }
             }
 
-            @include md{
-                margin: 0;
-                grid-area: article;
-                border: none;
-                border-top: 10px solid $orange;
-                border-left: 10px solid $orange;
+            >div{
+                height: 10px;
+                width: 20px;
+                margin-left: 70px;
+                background-color: $orange;
+
+                @include md{
+                    margin-left: 48.7%;
+                }
+
+                @include lg{
+                    margin-left: 49%;
+                }
+
+                @include xl{
+                    margin-left: 49.2%;
+                }
             }
         }
 
-        #s2-4{
-            height: 20px;
-            width: 20px;
-            margin-left: 230px;
-            background-color: $orange;
-        }
-
-        #s2-img{
-            border: 3px solid $orange;
-            margin: 0 5px;
-            height: 30vh;
-            background-image: url("../img/section-2/convention.jpg");
-            background-position: center;
-            background-size: cover;
-
+        #s2-content{
             @include md{
-                margin: 0;
-                grid-area: img;
-                border: none;
-                border-top: 10px solid $orange;
-                border-right: 10px solid $orange;
+                display: grid;
+                gap: 0px;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: "dnt dnt dnt map map map"
+                "img img article article article article";
+            }
+            
+        #dnt{
+                border: 3px solid $orange;
+                margin: 0 5px;
+                padding: 25px 0 25px 13px;
+
+                h2{
+                    font-size: rem-calc(18);
+                    padding-bottom: 2px;
+                    font-family: futura-pt-bold, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(25);
+                    }
+                }
+
+                h3{
+                    font-size: rem-calc(18);
+                    padding-bottom: 10px;
+                    padding-left: 15px;
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(25);
+                    }
+                }
+
+                @include md{
+                    margin: 0;
+                    grid-area: dnt;
+                    border: none;
+                    border-bottom: 10px solid $orange;
+                    border-right: 10px solid $orange;
+                }
             }
 
-            @include lg{
+            #s2-2{
+                height: 20px;
+                width: 20px;
+                margin-left: 150px;
+                background-color: $orange;
+            }
+
+            #s2-map{
+                border: 3px solid $orange;
+                margin: 0 5px;
                 height: 30vh;
+                background-image: url("../img/section-2/map.png");
+                background-position: center;
+                background-size: cover;
+
+                @include md{
+                    margin: 0;
+                    grid-area: map;
+                    height: 40vh;
+                    border: none;
+                    border-bottom: 10px solid $orange;
+                    border-left: 10px solid $orange;
+                }
+
+                @include lg{
+                    height: 35vh;
+                }
+            }
+
+            #s2-3{
+                height: 20px;
+                width: 20px;
+                margin-left: 70px;
+                background-color: $orange;
+            }
+
+            article{
+                border: 3px solid $orange;
+                margin: 0 5px;
+                padding: 7px 0 0 4px;
+
+                h2{
+                    font-size: rem-calc(18);
+                    padding-top: 5px;
+                    font-family: futura-pt-bold, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                        padding-right: 10px;
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(25);
+                    }
+                }
+
+                h3{
+                    font-size: rem-calc(17);
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(25);
+                    }
+                }
+
+                ul{
+                    font-size: rem-calc(18);
+                    font-family: futura-pt, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(25);
+                    }
+                }
+
+                @include md{
+                    margin: 0;
+                    grid-area: article;
+                    border: none;
+                    border-top: 10px solid $orange;
+                    border-left: 10px solid $orange;
+                }
+            }
+
+            #s2-4{
+                height: 20px;
+                width: 20px;
+                margin-left: 230px;
+                background-color: $orange;
+            }
+
+            #s2-img{
+                border: 3px solid $orange;
+                margin: 0 5px;
+                height: 30vh;
+                background-image: url("../img/section-2/convention.jpg");
+                background-position: center;
+                background-size: cover;
+
+                @include md{
+                    margin: 0;
+                    grid-area: img;
+                    border: none;
+                    border-top: 10px solid $orange;
+                    border-right: 10px solid $orange;
+                }
+
+                @include lg{
+                    height: 30vh;
+                }
+            }
+
+            
+        }
+        #s2-5{
+            height: 20px;
+            width: 20px;
+            margin-left: 246px;
+            background-color: $orange;
+
+            @include lg{
+                margin-left: 32.3%;
+            }
+
+            @include xl{
+                margin-left: 32.5%;
             }
         }
-
-        
     }
-    #s2-5{
-        height: 20px;
-        width: 20px;
-        margin-left: 246px;
-        background-color: $orange;
-
-        @include lg{
-            margin-left: 32.3%;
-        }
-    } 
+        
+     
 }

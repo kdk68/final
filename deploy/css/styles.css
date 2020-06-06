@@ -406,7 +406,10 @@ textarea {
       color: #0085AA;
       text-decoration: none;
       transition: 0.25s;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
     #nav ul li a:hover, #nav ul li a:active {
       color: #A8CC39; }
 
@@ -510,12 +513,18 @@ header {
       height: 50vh; } }
   @media (min-width: 992px) {
     #s1 {
-      height: 30vh; } }
+      margin-top: 110px; } }
+  @media (min-width: 1200px) {
+    #s1 {
+      margin-top: 100px; } }
   #s1 #s1-text {
     display: flex;
     justify-content: center;
     text-align: center;
     color: #fff;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.5rem; }
     @media (min-width: 768px) {
       #s1 #s1-text {
@@ -526,194 +535,204 @@ header {
 /* =============
     Section 2
 ============= */
-#s2 #s2-header h1 {
-  color: #fff;
-  background-color: #DF4C2C;
-  margin: 10px 11px 0;
-  padding: 40px 12px 0;
-  border-radius: 8px;
-  font-size: 1.5rem; }
-  @media (min-width: 768px) {
-    #s2 #s2-header h1 {
-      margin: 50px 180px 0 10px;
-      font-size: 2.8125rem; } }
-  @media (min-width: 992px) {
-    #s2 #s2-header h1 {
-      margin: 50px 470px 0 10px; } }
-#s2 #s2-header h4 {
-  padding: 10px 10px;
-  text-align: center;
-  font-size: 1.125rem;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
-  font-style: normal; }
-  @media (min-width: 768px) {
-    #s2 #s2-header h4 {
-      text-align: start; } }
-  @media (min-width: 992px) {
-    #s2 #s2-header h4 {
-      font-size: 1.25rem; } }
-#s2 #s2-header > div {
-  height: 10px;
-  width: 20px;
-  margin-left: 70px;
-  background-color: #DF4C2C; }
-  @media (min-width: 768px) {
-    #s2 #s2-header > div {
-      margin-left: 48.7%; } }
-  @media (min-width: 992px) {
-    #s2 #s2-header > div {
-      margin-left: 49%; } }
-@media (min-width: 768px) {
-  #s2 #s2-content {
+@media (min-width: 1200px) {
+  #s2 {
     display: grid;
-    gap: 0px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "dnt dnt dnt map map map" "img img article article article article"; } }
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". container ."; } }
 
-#s2 #s2-content #dnt {
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  padding: 25px 0 25px 13px; }
-  #s2 #s2-content #dnt h2 {
-    font-size: 1.125rem;
-    padding-bottom: 2px;
-    font-family: futura-pt-bold, sans-serif;
-    font-weight: 700;
-    font-style: normal; }
+#s2 #s2-container {
+  grid-area: container; }
+  #s2 #s2-container #s2-header h1 {
+    color: #fff;
+    background-color: #DF4C2C;
+    margin: 10px 11px 0;
+    padding: 40px 12px 0;
+    border-radius: 8px;
+    font-size: 1.5rem; }
     @media (min-width: 768px) {
-      #s2 #s2-content #dnt h2 {
-        font-size: 1.25rem; } }
+      #s2 #s2-container #s2-header h1 {
+        margin: 50px 180px 0 10px;
+        font-size: 2.8125rem; } }
     @media (min-width: 992px) {
-      #s2 #s2-content #dnt h2 {
-        font-size: 1.5625rem; } }
-  #s2 #s2-content #dnt h3 {
-    font-size: 1.125rem;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal; }
-    @media (min-width: 768px) {
-      #s2 #s2-content #dnt h3 {
-        font-size: 1.25rem; } }
-    @media (min-width: 992px) {
-      #s2 #s2-content #dnt h3 {
-        font-size: 1.5625rem; } }
-  @media (min-width: 768px) {
-    #s2 #s2-content #dnt {
-      margin: 0;
-      grid-area: dnt;
-      border: none;
-      border-bottom: 10px solid #DF4C2C;
-      border-right: 10px solid #DF4C2C; } }
-#s2 #s2-content #s2-2 {
-  height: 20px;
-  width: 20px;
-  margin-left: 150px;
-  background-color: #DF4C2C; }
-
-#s2 #s2-content #s2-map {
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  height: 30vh;
-  background-image: url("../img/section-2/map.png");
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #s2 #s2-content #s2-map {
-      margin: 0;
-      grid-area: map;
-      height: 40vh;
-      border: none;
-      border-bottom: 10px solid #DF4C2C;
-      border-left: 10px solid #DF4C2C; } }
-  @media (min-width: 992px) {
-    #s2 #s2-content #s2-map {
-      height: 35vh; } }
-#s2 #s2-content #s2-3 {
-  height: 20px;
-  width: 20px;
-  margin-left: 70px;
-  background-color: #DF4C2C; }
-
-#s2 #s2-content article {
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  padding: 7px 0 0 4px; }
-  #s2 #s2-content article h2 {
-    font-size: 1.125rem;
-    padding-top: 5px;
-    font-family: futura-pt-bold, sans-serif;
-    font-weight: 700;
-    font-style: normal; }
-    @media (min-width: 768px) {
-      #s2 #s2-content article h2 {
-        font-size: 1.25rem;
-        padding-right: 10px; } }
-    @media (min-width: 992px) {
-      #s2 #s2-content article h2 {
-        font-size: 1.5625rem; } }
-  #s2 #s2-content article h3 {
-    font-size: 1.0625rem;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal; }
-    @media (min-width: 768px) {
-      #s2 #s2-content article h3 {
-        font-size: 1.25rem; } }
-    @media (min-width: 992px) {
-      #s2 #s2-content article h3 {
-        font-size: 1.5625rem; } }
-  #s2 #s2-content article ul {
+      #s2 #s2-container #s2-header h1 {
+        margin: 50px 470px 0 10px; } }
+  #s2 #s2-container #s2-header h4 {
+    padding: 10px 10px;
+    text-align: center;
     font-size: 1.125rem;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal; }
     @media (min-width: 768px) {
-      #s2 #s2-content article ul {
-        font-size: 1.25rem; } }
+      #s2 #s2-container #s2-header h4 {
+        text-align: start; } }
     @media (min-width: 992px) {
-      #s2 #s2-content article ul {
-        font-size: 1.5625rem; } }
+      #s2 #s2-container #s2-header h4 {
+        font-size: 1.25rem; } }
+  #s2 #s2-container #s2-header > div {
+    height: 10px;
+    width: 20px;
+    margin-left: 70px;
+    background-color: #DF4C2C; }
+    @media (min-width: 768px) {
+      #s2 #s2-container #s2-header > div {
+        margin-left: 48.7%; } }
+    @media (min-width: 992px) {
+      #s2 #s2-container #s2-header > div {
+        margin-left: 49%; } }
+    @media (min-width: 1200px) {
+      #s2 #s2-container #s2-header > div {
+        margin-left: 49.2%; } }
   @media (min-width: 768px) {
-    #s2 #s2-content article {
-      margin: 0;
-      grid-area: article;
-      border: none;
-      border-top: 10px solid #DF4C2C;
-      border-left: 10px solid #DF4C2C; } }
-#s2 #s2-content #s2-4 {
-  height: 20px;
-  width: 20px;
-  margin-left: 230px;
-  background-color: #DF4C2C; }
-
-#s2 #s2-content #s2-img {
-  border: 3px solid #DF4C2C;
-  margin: 0 5px;
-  height: 30vh;
-  background-image: url("../img/section-2/convention.jpg");
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #s2 #s2-content #s2-img {
-      margin: 0;
-      grid-area: img;
-      border: none;
-      border-top: 10px solid #DF4C2C;
-      border-right: 10px solid #DF4C2C; } }
-  @media (min-width: 992px) {
-    #s2 #s2-content #s2-img {
-      height: 30vh; } }
-#s2 #s2-5 {
-  height: 20px;
-  width: 20px;
-  margin-left: 246px;
-  background-color: #DF4C2C; }
-  @media (min-width: 992px) {
-    #s2 #s2-5 {
-      margin-left: 32.3%; } }
+    #s2 #s2-container #s2-content {
+      display: grid;
+      gap: 0px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: "dnt dnt dnt map map map" "img img article article article article"; } }
+  #s2 #s2-container #s2-content #dnt {
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    padding: 25px 0 25px 13px; }
+    #s2 #s2-container #s2-content #dnt h2 {
+      font-size: 1.125rem;
+      padding-bottom: 2px;
+      font-family: futura-pt-bold, sans-serif;
+      font-weight: 700;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s2 #s2-container #s2-content #dnt h2 {
+          font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #s2 #s2-container #s2-content #dnt h2 {
+          font-size: 1.5625rem; } }
+    #s2 #s2-container #s2-content #dnt h3 {
+      font-size: 1.125rem;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s2 #s2-container #s2-content #dnt h3 {
+          font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #s2 #s2-container #s2-content #dnt h3 {
+          font-size: 1.5625rem; } }
+    @media (min-width: 768px) {
+      #s2 #s2-container #s2-content #dnt {
+        margin: 0;
+        grid-area: dnt;
+        border: none;
+        border-bottom: 10px solid #DF4C2C;
+        border-right: 10px solid #DF4C2C; } }
+  #s2 #s2-container #s2-content #s2-2 {
+    height: 20px;
+    width: 20px;
+    margin-left: 150px;
+    background-color: #DF4C2C; }
+  #s2 #s2-container #s2-content #s2-map {
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    height: 30vh;
+    background-image: url("../img/section-2/map.png");
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #s2 #s2-container #s2-content #s2-map {
+        margin: 0;
+        grid-area: map;
+        height: 40vh;
+        border: none;
+        border-bottom: 10px solid #DF4C2C;
+        border-left: 10px solid #DF4C2C; } }
+    @media (min-width: 992px) {
+      #s2 #s2-container #s2-content #s2-map {
+        height: 35vh; } }
+  #s2 #s2-container #s2-content #s2-3 {
+    height: 20px;
+    width: 20px;
+    margin-left: 70px;
+    background-color: #DF4C2C; }
+  #s2 #s2-container #s2-content article {
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    padding: 7px 0 0 4px; }
+    #s2 #s2-container #s2-content article h2 {
+      font-size: 1.125rem;
+      padding-top: 5px;
+      font-family: futura-pt-bold, sans-serif;
+      font-weight: 700;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s2 #s2-container #s2-content article h2 {
+          font-size: 1.25rem;
+          padding-right: 10px; } }
+      @media (min-width: 992px) {
+        #s2 #s2-container #s2-content article h2 {
+          font-size: 1.5625rem; } }
+    #s2 #s2-container #s2-content article h3 {
+      font-size: 1.0625rem;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s2 #s2-container #s2-content article h3 {
+          font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #s2 #s2-container #s2-content article h3 {
+          font-size: 1.5625rem; } }
+    #s2 #s2-container #s2-content article ul {
+      font-size: 1.125rem;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: normal; }
+      @media (min-width: 768px) {
+        #s2 #s2-container #s2-content article ul {
+          font-size: 1.25rem; } }
+      @media (min-width: 992px) {
+        #s2 #s2-container #s2-content article ul {
+          font-size: 1.5625rem; } }
+    @media (min-width: 768px) {
+      #s2 #s2-container #s2-content article {
+        margin: 0;
+        grid-area: article;
+        border: none;
+        border-top: 10px solid #DF4C2C;
+        border-left: 10px solid #DF4C2C; } }
+  #s2 #s2-container #s2-content #s2-4 {
+    height: 20px;
+    width: 20px;
+    margin-left: 230px;
+    background-color: #DF4C2C; }
+  #s2 #s2-container #s2-content #s2-img {
+    border: 3px solid #DF4C2C;
+    margin: 0 5px;
+    height: 30vh;
+    background-image: url("../img/section-2/convention.jpg");
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #s2 #s2-container #s2-content #s2-img {
+        margin: 0;
+        grid-area: img;
+        border: none;
+        border-top: 10px solid #DF4C2C;
+        border-right: 10px solid #DF4C2C; } }
+    @media (min-width: 992px) {
+      #s2 #s2-container #s2-content #s2-img {
+        height: 30vh; } }
+  #s2 #s2-container #s2-5 {
+    height: 20px;
+    width: 20px;
+    margin-left: 246px;
+    background-color: #DF4C2C; }
+    @media (min-width: 992px) {
+      #s2 #s2-container #s2-5 {
+        margin-left: 32.3%; } }
+    @media (min-width: 1200px) {
+      #s2 #s2-container #s2-5 {
+        margin-left: 32.5%; } }
 /* =============
     Section 3
 ============= */

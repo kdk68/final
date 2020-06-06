@@ -14,7 +14,11 @@
     }
 
     @include lg{
-        height: 30vh;
+        margin-top: 110px;
+    }
+
+    @include xl{
+        margin-top: 100px;
     }
 
     #s1-text{
@@ -22,6 +26,9 @@
         justify-content: center;
         text-align: center;
         color: $white;
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: rem-calc(24);
 
         @include md{
