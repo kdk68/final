@@ -38,3 +38,17 @@ h4{
         display: block;
     }
 }
+
+.hide-for-lg{
+    @include lg{
+        display: none;
+    }
+}
+
+.left-div{
+    border-right: 10px solid;
+}
+
+.right-div{
+    border-left: 10px solid;
+}

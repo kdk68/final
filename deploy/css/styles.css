@@ -345,6 +345,16 @@ h4 {
   @media (min-width: 768px) {
     .show-for-md {
       display: block; } }
+@media (min-width: 992px) {
+  .hide-for-lg {
+    display: none; } }
+
+.left-div {
+  border-right: 10px solid; }
+
+.right-div {
+  border-left: 10px solid; }
+
 /* =============
     Typography
 ============= */
@@ -435,7 +445,7 @@ header {
         height: 50px;
         margin: 0;
         padding: 10px 0 0;
-        justify-content: end; }
+        justify-content: right; }
         @media (min-width: 768px) {
           header > div #logo img {
             height: 85px; } }
@@ -535,7 +545,7 @@ header {
   background-color: #DF4C2C; }
   @media (min-width: 768px) {
     #s2 #s2-header > div {
-      margin-left: 50%; } }
+      margin-left: 48.7%; } }
 @media (min-width: 768px) {
   #s2 #s2-content {
     display: grid;
@@ -602,7 +612,7 @@ header {
       border-left: 10px solid #DF4C2C; } }
   @media (min-width: 992px) {
     #s2 #s2-content #s2-map {
-      height: 20vh; } }
+      height: 35vh; } }
 #s2 #s2-content #s2-3 {
   height: 20px;
   width: 20px;
@@ -677,7 +687,7 @@ header {
       border-right: 10px solid #DF4C2C; } }
   @media (min-width: 992px) {
     #s2 #s2-content #s2-img {
-      height: 12vh; } }
+      height: 30vh; } }
 #s2 #s2-5 {
   height: 20px;
   width: 20px;
@@ -907,63 +917,72 @@ header {
   margin-left: 150px;
   background-color: #0085AA; }
 
-#s4 #tailgate {
+#s4 #s4-content #tailgate {
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
-  #s4 #tailgate > div {
+  #s4 #s4-content #tailgate > div {
     background-image: url("../img/section-4/tailgate.png");
     height: 160px;
     width: 240px;
     background-size: cover;
-    background-position: center; }
-
-#s4 #s4-2 {
+    background-position: center;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      #s4 #s4-content #tailgate > div {
+        width: 596px;
+        height: 450px; } }
+#s4 #s4-content #s4-2 {
   background-color: #0085AA;
   height: 35px;
   width: 20px;
   margin-left: 230px; }
   @media (min-width: 768px) {
-    #s4 #s4-2 {
-      margin-left: 50%; } }
+    #s4 #s4-content #s4-2 {
+      margin-left: 48.7%; } }
 @media (min-width: 768px) {
-  #s4 #guests {
-    display: flex; } }
+  #s4 #s4-content #guests {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "eagles uzi"; } }
 
-#s4 #guests #eagle {
+#s4 #s4-content #guests #eagle {
+  grid-area: eagles;
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
   @media (min-width: 768px) {
-    #s4 #guests #eagle {
+    #s4 #s4-content #guests #eagle {
       margin: 0;
       padding: 25px 0;
       border: none;
       border-right: 10px solid #0085AA; } }
-  #s4 #guests #eagle > div {
+  #s4 #s4-content #guests #eagle > div {
     background-image: url("../img/section-4/eagle.png");
     width: 265px;
     height: 155px;
     background-position: center;
-    background-size: 265px; }
+    background-size: 265px;
+    margin: 0 auto; }
 
-#s4 #guests > div {
+#s4 #s4-content #guests > div {
   background-color: #0085AA;
   height: 35px;
   width: 20px;
   margin-left: 150px; }
 
-#s4 #guests #uzi {
+#s4 #s4-content #guests #uzi {
+  grid-area: uzi;
   border: 3px solid #0085AA;
   margin: 0 5px;
   padding: 25px 0 25px 13px; }
   @media (min-width: 768px) {
-    #s4 #guests #uzi {
+    #s4 #s4-content #guests #uzi {
       margin: 0;
       padding: 25px 0;
       border: none;
       border-left: 10px solid #0085AA; } }
-  #s4 #guests #uzi > div {
+  #s4 #s4-content #guests #uzi > div {
     background-image: url("../img/section-4/uzi.png");
     width: 265px;
     height: 155px;
@@ -977,7 +996,7 @@ header {
   margin-left: 70px; }
   @media (min-width: 768px) {
     #s4 #s4-3 {
-      margin-left: 50%; } }
+      margin-left: 48.7%; } }
 #s4 #rnd p {
   font-size: 1rem; }
 
@@ -1098,7 +1117,7 @@ header {
   background-color: #DF4C2C; }
   @media (min-width: 768px) {
     #s5 #s5-header > div {
-      margin-left: 50%; } }
+      margin-left: 48.7%; } }
 @media (min-width: 768px) {
   #s5 #md-grid {
     display: grid;
@@ -1138,7 +1157,7 @@ header {
   margin-left: 150px; }
   @media (min-width: 768px) {
     #s5 #s5-3 {
-      margin-left: 50%; } }
+      margin-left: 48.7%; } }
 #s5 #contacts {
   border: 3px solid #DF4C2C;
   margin: 0 5px;

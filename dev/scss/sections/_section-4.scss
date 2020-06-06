@@ -99,89 +99,100 @@
         }
     }
 
-    #tailgate{
-        border: 3px solid $blue;
-        margin: 0 5px;
-        padding: 25px 0 25px 13px;
-
-        >div{
-            background-image: url("../img/section-4/tailgate.png");
-            height: 160px;
-            width: 240px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        @include md{
-
-        }
-    }
-
-    #s4-2{
-        background-color: $blue;
-        height: 35px;
-        width: 20px;
-        margin-left: 230px;
-
-        @include md{
-            margin-left: 50%;
-        }
-    }
-
-    #guests{
-        @include md{
-            display: flex;
-        }
-
-        #eagle{
+    #s4-content{
+        #tailgate{
             border: 3px solid $blue;
             margin: 0 5px;
             padding: 25px 0 25px 13px;
 
-            @include md{
-                margin: 0;
-                padding: 25px 0;
-                border: none;
-                border-right: 10px solid $blue;
-            }
-
             >div{
-                background-image: url("../img/section-4/eagle.png");
-                width: 265px;
-                height: 155px;
+                background-image: url("../img/section-4/tailgate.png");
+                height: 160px;
+                width: 240px;
+                background-size: cover;
                 background-position: center;
-                background-size: 265px;
+                margin: 0 auto;
+
+                @include md{
+                    width: 596px;
+                    height: 450px;
+                }
             }
         }
 
-        >div{
+        #s4-2{
             background-color: $blue;
             height: 35px;
             width: 20px;
-            margin-left: 150px;
-        }
-
-        #uzi{
-            border: 3px solid $blue;
-            margin: 0 5px;
-            padding: 25px 0 25px 13px;
+            margin-left: 230px;
 
             @include md{
-                margin: 0;
-                padding: 25px 0;
-                border: none;
-                border-left: 10px solid $blue;
+                margin-left: 48.7%;
+            }
+        }
+
+        #guests{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "eagles uzi";
+            }
+
+            #eagle{
+                grid-area: eagles;
+                border: 3px solid $blue;
+                margin: 0 5px;
+                padding: 25px 0 25px 13px;
+
+                @include md{
+                    margin: 0;
+                    padding: 25px 0;
+                    border: none;
+                    border-right: 10px solid $blue;
+                }
+
+                >div{
+                    background-image: url("../img/section-4/eagle.png");
+                    width: 265px;
+                    height: 155px;
+                    background-position: center;
+                    background-size: 265px;
+                    margin: 0 auto;
+                }
             }
 
             >div{
-                background-image: url("../img/section-4/uzi.png");
-                width: 265px;
-                height: 155px;
-                background-position: 0 0;
-                background-size: 265px;
+                background-color: $blue;
+                height: 35px;
+                width: 20px;
+                margin-left: 150px;
+            }
+
+            #uzi{
+                grid-area: uzi;
+                border: 3px solid $blue;
+                margin: 0 5px;
+                padding: 25px 0 25px 13px;
+
+                @include md{
+                    margin: 0;
+                    padding: 25px 0;
+                    border: none;
+                    border-left: 10px solid $blue;
+                }
+
+                >div{
+                    background-image: url("../img/section-4/uzi.png");
+                    width: 265px;
+                    height: 155px;
+                    background-position: 0 0;
+                    background-size: 265px;
+                }
             }
         }
     }
+
+    
 
     #s4-3{
         background-color: $blue;
@@ -190,7 +201,7 @@
         margin-left: 70px;
 
         @include md{
-            margin-left: 50%;
+            margin-left: 48.7%;
         }
     }
 
