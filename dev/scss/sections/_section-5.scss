@@ -1,217 +1,211 @@
 /* =============
     Section 5
 ============= */
-#div-img-3{
+#div-img-3 {
     background-image: url("../img/section-5/div.jpg");
-    width: 100%;
-    height: 5vh;
     background-position: center;
     background-size: cover;
+    height: 5vh;
+    width: 100%;
 
-    @include md{
+    @include md {
         height: 10vh;
     }
 }
 
-#s5{
-    @include xl{
+#s5 {
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". container .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    h2{
-        text-align: center;
-        padding-bottom: 5px;
-        font-size: rem-calc(20);
+    h2 {
         font-family: futura-pt-bold, sans-serif;
-        font-weight: 700;
+        font-size: rem-calc(20);
         font-style: normal;
+        font-weight: 700;
+        padding-bottom: 5px;
+        text-align: center;
 
-        @include md{
+        @include md {
             font-size: rem-calc(30);
         }
     }
 
-    h4{
+    h4 {
         font-size: rem-calc(18);
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
         }
     }
 
-    p{
-        font-size: rem-calc(18);
-        padding: 5px 0;
+    p {
         font-family: futura-pt, sans-serif;
-        font-weight: 500;
+        font-size: rem-calc(18);
         font-style: normal;
+        font-weight: 500;
+        padding: 5px 0;
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(25);
         }
     }
 
-    #s5-container{
+    #s5-container {
         grid-area: container;
 
-        #s5-1{
+        #s5-1 {
             background-color: $orange;
             height: 35px;
-            width: 20px;
             margin-left: 230px;
+            width: 20px;
         }
 
-        #s5-header{
-            h1{
-                color: $white;
+        #s5-header {
+            h1 {
                 background-color: $orange;
+                border-radius: 8px;
+                color: $white;
+                font-size: rem-calc(24);
                 margin: 0 11px 0;
                 padding: 40px 12px 0;
-                border-radius: 8px;
-                font-size: rem-calc(24);
 
-                @include md{
-                    margin: 0 180px 0 10px;
+                @include md {
                     font-size: rem-calc(45);
+                    margin: 0 180px 0 10px;
                 }
             }
 
-            >div{
-                height: 10px;
-                width: 20px;
-                margin-left: 70px;
+            >div {
                 background-color: $orange;
+                height: 10px;
+                margin-left: 70px;
+                width: 20px;
 
-                @include md{
+                @include md {
                     margin-left: 48.7%;
                 }
 
-                @include lg{
+                @include lg {
                     margin-left: 49.2%;
                 }
             }
         }
 
-        #md-grid{
-            @include md{
+        #md-grid {
+            @include md {
                 display: grid;
-                grid-template-columns: 50% auto;
                 grid-template-areas: "faq press";
+                grid-template-columns: 50% auto;
             }
 
-            #faq{
-                grid-area: faq;
+            #faq {
                 border: 3px solid $orange;
+                grid-area: faq;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                ul{
-                    li{
+                ul {
+                    li {
                         padding: 5px 0;
 
-                        #button{
+                        #button {
                             height: 25px;
                         }
                     }
                 }
 
-                @include md{
-                    margin: 0;
+                @include md {
                     border: none;
-                    border-right: 10px solid $orange;               
+                    border-right: 10px solid $orange;
+                    margin: 0;
                 }
             }
 
-            #s5-2{
+            #s5-2 {
                 background-color: $orange;
                 height: 35px;
-                width: 20px;
                 margin-left: 230px;
+                width: 20px;
             }
 
-            #press{
-                grid-area: press;
+            #press {
                 border: 3px solid $orange;
+                grid-area: press;
                 margin: 0 5px;
                 padding: 25px 13px;
 
-                @include md{
-                    margin: 0;
+                @include md {
                     border: none;
-                    border-left: 10px solid $orange;               
+                    border-left: 10px solid $orange;
+                    margin: 0;
                 }
             }
         }
-        
 
-        #s5-3{
+        #s5-3 {
             background-color: $orange;
             height: 35px;
-            width: 20px;
             margin-left: 150px;
+            width: 20px;
 
-            @include md{
+            @include md {
                 margin-left: 48.7%;
             }
 
-            @include lg{
+            @include lg {
                 margin-left: 49.2%;
             }
         }
 
-        #contacts{
+        #contacts {
             border: 3px solid $orange;
             margin: 0 5px;
             padding: 25px 13px;
 
-            li{
-                font-size: rem-calc(18);
+            li {
                 font-family: futura-pt, sans-serif;
-                font-weight: 500;
+                font-size: rem-calc(18);
                 font-style: normal;
+                font-weight: 500;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(20);
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(25);
                 }
             }
 
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "as kb";
+            @include md {
                 border: 10px solid $orange;
+                display: grid;
+                grid-template-areas: "as kb";
+                grid-template-columns: 50% auto;
                 margin: 0;
 
-                #as{
+                #as {
                     grid-area: as;
                 }
 
-                #kb{
+                #kb {
                     grid-area: kb;
                 }
             }
         }
 
-        #s5-5{
+        #s5-5 {
             background-color: $orange;
             height: 35px;
-            width: 20px;
             margin-left: 70px;
+            width: 20px;
         }
     }
-    
-
-    
-
-    
 }

@@ -1,36 +1,38 @@
 /* =============
     Navigation
 ============= */
-#nav{
-    ul{
+#nav {
+    ul {
         height: 100%;
         text-align: left;
 
-        @include lg{
+        @include lg {
             display: flex;
             justify-content: flex-end;
         }
 
-        li{
+        li {
             margin-bottom: 20px;
 
-            @include lg{
+            @include lg {
                 align-items: center;
                 display: flex;
                 margin: 0 30px 0 0;
             }
 
-            a:link, a:visited{
+            a:link,
+            a:visited {
                 color: $blue;
+                font-family: futura-pt, sans-serif;
+                font-size: rem-calc(16);
+                font-style: normal;
+                font-weight: 500;
                 text-decoration: none;
                 transition: 0.25s;
-                font-size: rem-calc(16);
-                font-family: futura-pt, sans-serif;
-                font-weight: 500;
-                font-style: normal;
             }
 
-            a:hover, a:active{
+            a:hover,
+            a:active {
                 color: $green;
             }
         }

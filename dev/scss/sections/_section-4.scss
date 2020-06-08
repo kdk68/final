@@ -1,383 +1,375 @@
 /* =============
     Section 4
 ============= */
-#div-img-2{
+#div-img-2 {
     background-image: url("../img/section-4/div.jpg");
-    width: 100%;
-    height: 5vh;
     background-position: center;
     background-size: cover;
+    height: 5vh;
+    width: 100%;
 
-    @include md{
+    @include md {
         height: 10vh;
     }
 }
 
-#s4{
-
-    h2{
-        text-align: center;
-        padding-bottom: 15px;
-        font-size: rem-calc(20);
+#s4 {
+    h2 {
         font-family: futura-pt-bold, sans-serif;
-        font-weight: 700;
+        font-size: rem-calc(20);
         font-style: normal;
+        font-weight: 700;
+        padding-bottom: 15px;
+        text-align: center;
 
-        @include md{
+        @include md {
             font-size: rem-calc(30);
         }
     }
 
-    h3{
-        font-size: rem-calc(18);
-        text-align: center;
-        padding: 10px 0 5px;
+    h3 {
         font-family: futura-pt-bold, sans-serif;
-        font-weight: 700;
+        font-size: rem-calc(18);
         font-style: normal;
+        font-weight: 700;
+        padding: 10px 0 5px;
+        text-align: center;
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(25);
         }
     }
 
-    h6{
-        text-align: center;
-        font-size: rem-calc(18);
+    h6 {
         font-family: futura-pt, sans-serif;
-        font-weight: 500;
+        font-size: rem-calc(18);
         font-style: normal;
+        font-weight: 500;
+        text-align: center;
 
-        @include md{
+        @include md {
             font-size: rem-calc(18);
         }
     }
 
-    p{
-        font-size: rem-calc(18);
+    p {
         font-family: futura-pt, sans-serif;
-        font-weight: 500;
+        font-size: rem-calc(18);
         font-style: normal;
+        font-weight: 500;
         padding-top: 5px;
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
             padding: 0 40px 0 30px;
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(25);
         }
     }
 
-    @include xl{
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". container .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    
-
-    #s4-container{
+    #s4-container {
         grid-area: container;
 
-        #s4-1{
+        #s4-1 {
             background-color: $blue;
             height: 35px;
-            width: 20px;
             margin-left: 70px;
+            width: 20px;
         }
 
-        #s4-header{
-            h1{
-                color: $white;
+        #s4-header {
+            h1 {
                 background-color: $blue;
+                border-radius: 8px;
+                color: $white;
+                font-size: rem-calc(24);
                 margin: 0 11px 0;
                 padding: 40px 12px 0;
-                border-radius: 8px;
-                font-size: rem-calc(24);
 
-                @include md{
-                    margin: 0px 180px 0 10px;
+                @include md {
                     font-size: rem-calc(45);
+                    margin: 0px 180px 0 10px;
                 }
             }
 
-            >div{
-                height: 10px;
-                width: 20px;
-                margin-left: 150px;
+            >div {
                 background-color: $blue;
+                height: 10px;
+                margin-left: 150px;
+                width: 20px;
 
-                @include lg{
+                @include lg {
                     margin-left: 32.5%;
                 }
             }
         }
 
-        #s4-content{
-            @include lg{
+        #s4-content {
+            @include lg {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
                 grid-template-areas: "eagles tail tail"
-                "uzi tail tail";
+                    "uzi tail tail";
+                grid-template-columns: repeat(3, 1fr);
             }
-            #tailgate{
-                grid-area: tail;
+
+            #tailgate {
                 border: 3px solid $blue;
+                grid-area: tail;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                @include lg{
-                    margin: 0;
+                @include lg {
                     border: none;
                     border-left: 10px solid $blue;
+                    margin: 0;
                 }
 
-                >div{
+                >div {
                     background-image: url("../img/section-4/tailgate.png");
-                    height: 160px;
-                    width: 240px;
-                    background-size: cover;
                     background-position: center;
+                    background-size: cover;
+                    height: 160px;
                     margin: 0 auto;
+                    width: 240px;
 
-                    @include md{
-                        width: 596px;
+                    @include md {
                         height: 450px;
+                        width: 596px;
                     }
                 }
             }
 
-            #s4-2{
+            #s4-2 {
                 background-color: $blue;
                 height: 35px;
-                width: 20px;
                 margin-left: 230px;
+                width: 20px;
 
-                @include md{
+                @include md {
                     margin-left: 48.7%;
                 }
 
-                @include lg{
+                @include lg {
                     display: none;
                 }
             }
 
-            #guests{
-                @include md{
+            #guests {
+                @include md {
                     display: grid;
-                    grid-template-columns: 50% auto;
                     grid-template-areas: "eagles uzi";
+                    grid-template-columns: 50% auto;
                 }
 
-                @include lg{
+                @include lg {
                     display: block;
                 }
 
-                #eagle{
-                    grid-area: eagles;
+                #eagle {
                     border: 3px solid $blue;
+                    grid-area: eagles;
                     margin: 0 5px;
                     padding: 25px 0 25px 13px;
 
-                    @include md{
-                        margin: 0;
-                        padding: 25px 0;
+                    @include md {
                         border: none;
                         border-right: 10px solid $blue;
+                        margin: 0;
+                        padding: 25px 0;
                     }
 
-                    @include lg{
+                    @include lg {
                         border-bottom: 10px solid $blue;
                         height: 350px;
                     }
 
-                    >div{
+                    >div {
                         background-image: url("../img/section-4/eagle.png");
-                        width: 265px;
-                        height: 155px;
                         background-position: center;
                         background-size: 265px;
+                        height: 155px;
                         margin: 0 auto;
+                        width: 265px;
                     }
                 }
 
-                >div{
+                >div {
                     background-color: $blue;
                     height: 35px;
-                    width: 20px;
                     margin-left: 150px;
+                    width: 20px;
                 }
 
-                #uzi{
-                    grid-area: uzi;
+                #uzi {
                     border: 3px solid $blue;
+                    grid-area: uzi;
                     margin: 0 5px;
                     padding: 25px 0 25px 13px;
 
-                    @include md{
-                        margin: 0;
-                        padding: 25px 0;
+                    @include md {
                         border: none;
                         border-left: 10px solid $blue;
+                        margin: 0;
+                        padding: 25px 0;
                     }
 
-                    @include lg{
+                    @include lg {
+                        border-left: none;
                         border-right: 10px solid $blue;
                         border-top: 10px solid $blue;
-                        border-left: none;
                         height: 320px;
                     }
 
-                    >div{
+                    >div {
                         background-image: url("../img/section-4/uzi.png");
-                        width: 265px;
-                        height: 155px;
                         background-position: 0 0;
                         background-size: 265px;
+                        height: 155px;
                         margin: 0 auto;
+                        width: 265px;
                     }
                 }
             }
         }
 
-        
-
-        #s4-3{
+        #s4-3 {
             background-color: $blue;
             height: 35px;
-            width: 20px;
             margin-left: 70px;
+            width: 20px;
 
-            @include md{
+            @include md {
                 margin-left: 48.7%;
             }
 
-            @include lg{
+            @include lg {
                 margin-left: 32.5%;
             }
         }
 
-        #rnd{
-
-            #jeep{
+        #rnd {
+            #jeep {
                 border: 3px solid $blue;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                section{
-                >div{
+                section {
+                    >div {
                         background-image: url("../img/section-4/jeep.png");
-                        height: 95px;
                         background-position: center;
-                        background-size: 95px;
                         background-repeat: no-repeat;
+                        background-size: 95px;
+                        height: 95px;
 
-                        @include md{
-                            height: 117px;
+                        @include md {
                             background-size: 117px;
+                            height: 117px;
                         }
 
-                        @include lg{
-                            height: 150px;
+                        @include lg {
                             background-size: 150px;
+                            height: 150px;
                         }
-                    } 
+                    }
 
-                    h3{
+                    h3 {
                         text-align: center;
                     }
                 }
-                
             }
 
-            #s4-4{
+            #s4-4 {
                 background-color: $blue;
                 height: 35px;
-                width: 20px;
                 margin-left: 70px;
+                width: 20px;
             }
 
-            #toyota{
+            #toyota {
                 border: 3px solid $blue;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                section{
-                    >div{
+                section {
+                    >div {
                         background-image: url("../img/section-4/toyota.png");
-                        height: 95px;
                         background-position: center;
-                        background-size: 95px;
                         background-repeat: no-repeat;
+                        background-size: 95px;
+                        height: 95px;
 
-                        @include md{
-                            height: 112px;
+                        @include md {
                             background-size: 112px;
+                            height: 112px;
                         }
 
-                        @include lg{
-                            height: 150px;
+                        @include lg {
                             background-size: 150px;
+                            height: 150px;
                         }
-                    } 
-    
-                    h3{
+                    }
+
+                    h3 {
                         text-align: center;
                     }
                 }
             }
 
-            #s4-5{
+            #s4-5 {
                 background-color: $blue;
                 height: 35px;
-                width: 20px;
                 margin-left: 150px;
+                width: 20px;
             }
 
-            #vw{
+            #vw {
                 border: 3px solid $blue;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                section{
-                    >div{
+                section {
+                    >div {
                         background-image: url("../img/section-4/vw.png");
-                        height: 95px;
                         background-position: center;
-                        background-size: 95px;
                         background-repeat: no-repeat;
+                        background-size: 95px;
+                        height: 95px;
 
-                        @include md{
-                            height: 112px;
+                        @include md {
                             background-size: 112px;
+                            height: 112px;
                         }
 
-                        @include lg{
-                            height: 150px;
+                        @include lg {
                             background-size: 150px;
+                            height: 150px;
                         }
-                    } 
-    
-                    h3{
+                    }
+
+                    h3 {
                         text-align: center;
                     }
                 }
             }
         }
 
-        #s4-6{
+        #s4-6 {
             background-color: $blue;
             height: 35px;
-            width: 20px;
             margin-left: 230px;
+            width: 20px;
         }
     }
-
-    
 }

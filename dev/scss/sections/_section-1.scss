@@ -1,41 +1,41 @@
 /* =============
     Section 1
 ============= */
-#s1{
-    margin-top: 72px;
+#s1 {
     background-image: url("../img/section-1/hero.jpg");
-    height: 20vh;
     background-position: center;
     background-size: cover;
+    height: 20vh;
+    margin-top: 72px;
 
-    @include md{
-        margin-top: 100px;
+    @include md {
         height: 50vh;
+        margin-top: 100px;
     }
 
-    @include lg{
+    @include lg {
         margin-top: 110px;
     }
 
-    @include xl{
+    @include xl {
         margin-top: 100px;
     }
 
-    #s1-text{
+    #s1-text {
+        color: $white;
         display: flex;
+        font-family: futura-pt-bold, sans-serif;
+        font-size: rem-calc(24);
+        font-style: normal;
+        font-weight: 700;
         justify-content: center;
         text-align: center;
-        color: $white;
-        font-family: futura-pt-bold, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: rem-calc(24);
 
-        @include md{
+        @include md {
             font-size: rem-calc(30);
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(35);
         }
     }

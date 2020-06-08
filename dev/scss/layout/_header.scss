@@ -1,74 +1,74 @@
 /* =============
     Header
 ============= */
-header{
+header {
     background-color: $white;
+    border-bottom: 3px solid $green;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 3px solid $green;
 
-    >div{
+    >div {
         display: grid;
-        grid-template-columns: 30% auto;
         grid-template-areas: "burger logo"
-        "nav nav";
+            "nav nav";
+        grid-template-columns: 30% auto;
 
-        @include md{
+        @include md {
             grid-template-columns: 58% auto;
         }
 
-        @include lg{
+        @include lg {
             grid-template-areas: "nav logo";
             grid-template-columns: auto 31%;
         }
 
-        #burger{
+        #burger {
             align-items: center;
             display: flex;
             grid-area: burger;
             padding: 20px;
 
-            @include lg{
+            @include lg {
                 display: none !important;
             }
 
-            img{
-                height: 30px;
+            img {
                 cursor: pointer;
+                height: 30px;
 
-                @include md{
+                @include md {
                     height: 40px;
                 }
             }
         }
 
-        #logo{
-            grid-area: logo;
-            padding: 0;
-            justify-self: end;
+        #logo {
             align-items: center;
+            grid-area: logo;
+            justify-self: end;
+            padding: 0;
 
-            img{
+            img {
                 height: 50px;
+                justify-content: right;
                 margin: 0;
                 padding: 10px 0 0;
-                justify-content: right;
 
-                @include md{
+                @include md {
                     height: 85px;
                 }
             }
         }
 
-        #nav{
+        #nav {
             background-color: #fff;
             display: none;
             grid-area: nav;
             padding: 20px;
 
-            @include lg{
+            @include lg {
                 background-color: #fff;
                 display: flex !important;
             }

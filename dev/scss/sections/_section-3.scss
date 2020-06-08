@@ -1,217 +1,210 @@
 /* =============
     Section 3
 ============= */
-#div-img-1{
+#div-img-1 {
     background-image: url("../img/section-3/div.jpg");
-    width: 100%;
-    height: 5vh;
     background-position: center;
     background-size: cover;
+    height: 5vh;
+    width: 100%;
 
-    @include md{
+    @include md {
         height: 10vh;
     }
 }
 
-#s3-1{
+#s3-1 {
     background-color: $green;
     height: 35px;
-    width: 20px;
     margin-left: 70px;
+    width: 20px;
 }
 
-#s3{
-
-    h2{
-        text-align: center;
-        padding-bottom: 15px;
-        font-size: rem-calc(20);
+#s3 {
+    h2 {
         font-family: futura-pt-bold, sans-serif;
-        font-weight: 700;
+        font-size: rem-calc(20);
         font-style: normal;
+        font-weight: 700;
+        padding-bottom: 15px;
+        text-align: center;
 
-        @include md{
+        @include md {
             font-size: rem-calc(30);
         }
     }
 
-    h3{
-        font-size: rem-calc(18);
+    h3 {
         font-family: futura-pt-bold, sans-serif;
-        font-weight: 700;
+        font-size: rem-calc(18);
         font-style: normal;
+        font-weight: 700;
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
         }
     }
 
-    p{
-        font-size: rem-calc(18);
+    p {
         font-family: fuura-pt, sans-serif;
-        font-weight: 500;
+        font-size: rem-calc(18);
         font-style: normal;
+        font-weight: 500;
         padding: 10px 0 5px;
 
-        @include md{
+        @include md {
             font-size: rem-calc(20);
         }
     }
 
-    @include xl{
+    @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". container .";
+        grid-template-columns: auto 1200px auto;
     }
 
-    #s3-container{
+    #s3-container {
         grid-area: container;
 
-        #s3-header{
-            h1{
-                color: $white;
+        #s3-header {
+            h1 {
                 background-color: $green;
+                border-radius: 8px;
+                color: $white;
+                font-size: rem-calc(24);
                 margin: 0 11px 0;
                 padding: 40px 12px 0;
-                border-radius: 8px;
-                font-size: rem-calc(24);
 
-                @include md{
-                    margin: 0 180px 0 10px;
+                @include md {
                     font-size: rem-calc(45);
+                    margin: 0 180px 0 10px;
                 }
 
-                @include lg{
-                }
+                @include lg {}
             }
 
-            h4{
+            h4 {
                 padding: 10px 10px;
                 text-align: center;
             }
 
-            >div{
-                height: 10px;
-                width: 20px;
-                margin-left: 150px;
+            >div {
                 background-color: $green;
+                height: 10px;
+                margin-left: 150px;
+                width: 20px;
 
-                @include md{
+                @include md {
                     margin-left: 374px;
                 }
 
-                @include xl{
+                @include xl {
                     margin-left: 49.2%;
                 }
             }
         }
 
-        #s3-content{
-
-            @include md{
+        #s3-content {
+            @include md {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
                 grid-template-areas: "price img"
-                "coupon coupon";
+                    "coupon coupon";
+                grid-template-columns: repeat(2, 1fr);
             }
-        #prices{
+
+            #prices {
                 border: 3px solid $green;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                
-                
-                ul{
-                    li{
+                ul {
+                    li {
                         padding: 5px 0;
                     }
 
-                    h4{
-                        font-size: rem-calc(18);
+                    h4 {
                         font-family: futura-pt, sans-serif;
-                        font-weight: 500;
+                        font-size: rem-calc(18);
                         font-style: normal;
+                        font-weight: 500;
 
-                        @include md{
+                        @include md {
                             font-size: rem-calc(20);
                         }
                     }
 
-                    h5{
+                    h5 {
+                        font-family: futura-pt, sans-serif;
+                        font-size: rem-calc(14);
+                        font-style: normal;
+                        font-weight: 500;
                         padding-left: 15px;
                         padding-right: 5px;
-                        font-size: rem-calc(14);
-                        font-family: futura-pt, sans-serif;
-                        font-weight: 500;
-                        font-style: normal;
 
-                        @include md{
+                        @include md {
                             font-size: rem-calc(16);
                         }
                     }
                 }
 
-                @include md{
-                    margin: 0;
-                    grid-area: price;
+                @include md {
                     border: none;
                     border-bottom: 10px solid $green;
                     border-right: 10px solid $green;
+                    grid-area: price;
+                    margin: 0;
                 }
             }
 
-            #s3-2{
+            #s3-2 {
                 background-color: $green;
                 height: 20px;
-                width: 20px;
                 margin-left: 230px;
+                width: 20px;
             }
 
-            #s3-img{
-                border: 3px solid $green;
-                margin: 0 5px;
+            #s3-img {
                 background-image: url("../img/section-3/center.jpg");
-                height: 30vh;
                 background-position: center;
                 background-size: cover;
+                border: 3px solid $green;
+                height: 30vh;
+                margin: 0 5px;
 
-                @include md{
-                    margin: 0;
-                    height: 48vh;
-                    grid-area: img;
+                @include md {
                     border: none;
                     border-bottom: 10px solid $green;
                     border-left: 10px solid $green;
+                    grid-area: img;
+                    height: 48vh;
+                    margin: 0;
                 }
             }
 
-            #s3-3{
+            #s3-3 {
                 background-color: $green;
                 height: 20px;
-                width: 20px;
                 margin-left: 230px;
+                width: 20px;
             }
 
-            #cnd{
+            #cnd {
                 border: 3px solid $green;
                 margin: 0 5px;
                 padding: 25px 0 25px 13px;
 
-                @include md{
-                    margin: 0;
+                @include md {
                     grid-area: coupon;
-                    border: 10px solid $green
+                    margin: 0;
                 }
-            } 
+            }
         }
 
-        #s3-4{
+        #s3-4 {
             background-color: $green;
             height: 20px;
-            width: 20px;
             margin-left: 150px;
+            width: 20px;
         }
     }
-
-    
 }
