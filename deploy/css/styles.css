@@ -1388,14 +1388,12 @@ header {
     width: 20px; }
   #s6 #s6-container ul {
     display: grid;
-    gap: 20px;
-    grid-template-areas: "g1" "g2" "g3" "g4" "g5";
-    grid-template-rows: repeat(5, 160px);
+    grid-template-areas: "g1" "d1" "g2" "d2" "g3" "d3" "g4" "d4" "g5";
+    grid-template-rows: repeat(5, 160px 20px);
     margin-bottom: 0;
     margin-top: 0; }
     @media (min-width: 768px) {
       #s6 #s6-container ul {
-        gap: 0px;
         grid-template-areas: "g1 g1 g1 g1" "g1 g1 g1 g1" "g1 g1 g1 g1" "g2 g3 g4 g5";
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 100px); } }
@@ -1407,34 +1405,48 @@ header {
         grid-template-rows: repeat(4, 200px); } }
     #s6 #s6-container ul li {
       background-position: center;
-      background-size: cover; }
+      background-size: cover;
+      border: 10px solid #A8CC39; }
     #s6 #s6-container ul #g1 {
       background-image: url("../img/section-6/g1.jpg");
       grid-area: g1; }
-      @media (min-width: 768px) {
-        #s6 #s6-container ul #g1 {
-          border: 10px solid #A8CC39; } }
     #s6 #s6-container ul #g2 {
       background-image: url("../img/section-6/g2.jpg");
       grid-area: g2; }
-      @media (min-width: 768px) {
-        #s6 #s6-container ul #g2 {
-          border: 10px solid #A8CC39; } }
     #s6 #s6-container ul #g3 {
       background-image: url("../img/section-6/g3.jpg");
       grid-area: g3; }
-      @media (min-width: 768px) {
-        #s6 #s6-container ul #g3 {
-          border: 10px solid #A8CC39; } }
     #s6 #s6-container ul #g4 {
       background-image: url("../img/section-6/g4.jpg");
       grid-area: g4; }
-      @media (min-width: 768px) {
-        #s6 #s6-container ul #g4 {
-          border: 10px solid #A8CC39; } }
     #s6 #s6-container ul #g5 {
       background-image: url("../img/section-6/g5.jpg");
       grid-area: g5; }
-      @media (min-width: 768px) {
-        #s6 #s6-container ul #g5 {
-          border: 10px solid #A8CC39; } }
+    #s6 #s6-container ul #d1 {
+      grid-area: d1;
+      background-color: #A8CC39;
+      height: 20px;
+      width: 20px;
+      border: none;
+      margin-left: 150px; }
+    #s6 #s6-container ul #d2 {
+      grid-area: d2;
+      background-color: #A8CC39;
+      height: 20px;
+      width: 20px;
+      border: none;
+      margin-left: 70px; }
+    #s6 #s6-container ul #d3 {
+      grid-area: d3;
+      background-color: #A8CC39;
+      height: 20px;
+      width: 20px;
+      border: none;
+      margin-left: 230px; }
+    #s6 #s6-container ul #d4 {
+      grid-area: d4;
+      background-color: #A8CC39;
+      height: 20px;
+      width: 20px;
+      border: none;
+      margin-left: 150px; }

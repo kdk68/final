@@ -55,18 +55,20 @@
 
         ul {
             display: grid;
-            gap: 20px;
             grid-template-areas: "g1"
+                "d1"
                 "g2"
+                "d2"
                 "g3"
+                "d3"
                 "g4"
+                "d4"
                 "g5";
-            grid-template-rows: repeat(5, 160px);
+            grid-template-rows: repeat(5, 160px 20px);
             margin-bottom: 0;
             margin-top: 0;
 
             @include md {
-                gap: 0px;
                 grid-template-areas: "g1 g1 g1 g1"
                     "g1 g1 g1 g1"
                     "g1 g1 g1 g1"
@@ -86,51 +88,68 @@
             li {
                 background-position: center;
                 background-size: cover;
+                border: 10px solid $green;
             }
 
             #g1 {
                 background-image: url("../img/section-6/g1.jpg");
                 grid-area: g1;
-
-                @include md {
-                    border: 10px solid $green;
-                }
             }
 
             #g2 {
                 background-image: url("../img/section-6/g2.jpg");
                 grid-area: g2;
-
-                @include md {
-                    border: 10px solid $green;
-                }
             }
 
             #g3 {
                 background-image: url("../img/section-6/g3.jpg");
                 grid-area: g3;
-
-                @include md {
-                    border: 10px solid $green;
-                }
             }
 
             #g4 {
                 background-image: url("../img/section-6/g4.jpg");
                 grid-area: g4;
-
-                @include md {
-                    border: 10px solid $green;
-                }
             }
 
             #g5 {
                 background-image: url("../img/section-6/g5.jpg");
                 grid-area: g5;
+            }
 
-                @include md {
-                    border: 10px solid $green;
-                }
+            #d1{
+                grid-area: d1;
+                background-color: $green;
+                height: 20px;
+                width: 20px;
+                border: none;
+                margin-left: 150px;
+            }
+
+            #d2{
+                grid-area: d2;
+                background-color: $green;
+                height: 20px;
+                width: 20px;
+                border: none;
+                margin-left: 70px;
+            }
+
+            #d3{
+                grid-area: d3;
+                background-color: $green;
+                height: 20px;
+                width: 20px;
+                border: none;
+                margin-left: 230px;
+            }
+
+            #d4{
+                grid-area: d4;
+                background-color: $green;
+                height: 20px;
+                width: 20px;
+                border: none;
+                margin-left: 150px;
             }
         }
     }
