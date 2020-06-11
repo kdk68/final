@@ -116,40 +116,40 @@
                 grid-area: g5;
             }
 
-            #d1{
+            #d1 {
+                background-color: $green;
+                border: none;
                 grid-area: d1;
-                background-color: $green;
                 height: 20px;
-                width: 20px;
-                border: none;
                 margin-left: 150px;
+                width: 20px;
             }
 
-            #d2{
+            #d2 {
+                background-color: $green;
+                border: none;
                 grid-area: d2;
-                background-color: $green;
                 height: 20px;
-                width: 20px;
-                border: none;
                 margin-left: 70px;
+                width: 20px;
             }
 
-            #d3{
+            #d3 {
+                background-color: $green;
+                border: none;
                 grid-area: d3;
-                background-color: $green;
                 height: 20px;
-                width: 20px;
-                border: none;
                 margin-left: 230px;
+                width: 20px;
             }
 
-            #d4{
-                grid-area: d4;
+            #d4 {
                 background-color: $green;
-                height: 20px;
-                width: 20px;
                 border: none;
+                grid-area: d4;
+                height: 20px;
                 margin-left: 150px;
+                width: 20px;
             }
         }
     }
